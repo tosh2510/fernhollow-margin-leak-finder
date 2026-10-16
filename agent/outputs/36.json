@@ -1,0 +1,54 @@
+{
+  "params": {
+    "allocation": "revenue",
+    "returnMultiplier": 1,
+    "freightPerOrder": null,
+    "threshold": 50
+  },
+  "by": "code",
+  "note": "New customers only. Tenure-matched = acquired Oct–Mar (6–12 months observed). Discounted = promo code (TEE2FOR50 multi-buy excluded).",
+  "rows": [
+    {
+      "cohort": "full price",
+      "customers": 5728,
+      "customers_tenure_matched": 2857,
+      "first_order_cm": 49.25,
+      "value_cm_per_customer": 71,
+      "value_cm_per_customer_tenure_matched": 80.82,
+      "net_revenue_per_customer_tenure_matched": 188,
+      "repeat_rate_tenure_matched": 0.42,
+      "pct_repeat_orders_discounted": 0.04,
+      "full_price_conversion": 0.34,
+      "full_price_converters": 1953,
+      "converter_value_cm": 112.46
+    },
+    {
+      "cohort": "WELCOME30",
+      "customers": 2468,
+      "customers_tenure_matched": 1293,
+      "first_order_cm": 18.43,
+      "value_cm_per_customer": 32.77,
+      "value_cm_per_customer_tenure_matched": 42.15,
+      "net_revenue_per_customer_tenure_matched": 146.19,
+      "repeat_rate_tenure_matched": 0.45,
+      "pct_repeat_orders_discounted": 0.66,
+      "full_price_conversion": 0.1,
+      "full_price_converters": 253,
+      "converter_value_cm": 81.17
+    },
+    {
+      "cohort": "other promo code",
+      "customers": 769,
+      "customers_tenure_matched": 557,
+      "first_order_cm": 30.49,
+      "value_cm_per_customer": 57.75,
+      "value_cm_per_customer_tenure_matched": 64.27,
+      "net_revenue_per_customer_tenure_matched": 174.76,
+      "repeat_rate_tenure_matched": 0.46,
+      "pct_repeat_orders_discounted": 0.03,
+      "full_price_conversion": 0.4,
+      "full_price_converters": 306,
+      "converter_value_cm": 99.54
+    }
+  ]
+}

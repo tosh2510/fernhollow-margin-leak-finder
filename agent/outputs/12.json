@@ -1,0 +1,65 @@
+{
+  "params": {
+    "allocation": "revenue",
+    "returnMultiplier": 1,
+    "freightPerOrder": null,
+    "threshold": 50
+  },
+  "by": "band",
+  "rows": [
+    {
+      "key": "$50–65",
+      "cm": -6501.21,
+      "cm_pct": -0.0669,
+      "net_revenue": 97199.3,
+      "units": 3739,
+      "return_rate": 0.102,
+      "orders": 2102
+    },
+    {
+      "key": "$0–50",
+      "cm": -2066.93,
+      "cm_pct": -0.0493,
+      "net_revenue": 41967.8,
+      "units": 1898,
+      "return_rate": 0.086,
+      "orders": 1496
+    },
+    {
+      "key": "$65–100",
+      "cm": 159128.76,
+      "cm_pct": 0.361,
+      "net_revenue": 440859.3,
+      "units": 7739,
+      "return_rate": 0.218,
+      "orders": 6704
+    },
+    {
+      "key": "$100–150",
+      "cm": 213785.96,
+      "cm_pct": 0.3882,
+      "net_revenue": 550720.9,
+      "units": 7237,
+      "return_rate": 0.279,
+      "orders": 6110
+    },
+    {
+      "key": "$150–250",
+      "cm": 290223.72,
+      "cm_pct": 0.4434,
+      "net_revenue": 654590.8,
+      "units": 10083,
+      "return_rate": 0.236,
+      "orders": 4401
+    },
+    {
+      "key": "$250+",
+      "cm": 414285.17,
+      "cm_pct": 0.4733,
+      "net_revenue": 875270,
+      "units": 12306,
+      "return_rate": 0.26,
+      "orders": 3731
+    }
+  ]
+}

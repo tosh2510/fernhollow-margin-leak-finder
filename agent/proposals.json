@@ -1,0 +1,442 @@
+[
+  {
+    "id": "P-001",
+    "title": "Pause Wrap Dress M/L and send fit-spec revision to Ege Jersey",
+    "type": "fix_fit_and_pause",
+    "target_system": "shopify",
+    "payload": {
+      "writes": [
+        {
+          "system": "shopify",
+          "op": "variant.update",
+          "skus": [
+            "WRP-BLA-M",
+            "WRP-BLA-L",
+            "WRP-TER-M",
+            "WRP-TER-L"
+          ],
+          "set": {
+            "inventory_policy": "deny",
+            "available_for_sale": false,
+            "storefront_badge": "Back soon in a refined fit"
+          }
+        },
+        {
+          "system": "supplier_email",
+          "to": "SUP-05 Ege Jersey Tekstil (Turkey)",
+          "subject": "Wrap Dress fit-spec revision: sizes M and L",
+          "body": "71% of M/L returns cite size_too_small (64% return rate vs 22-26% in XS/S/XL). Please re-check the M and L grade rules for bust, waist and hip against the base sample, and send revised M/L fit samples before the next bulk cut. XS/S/XL unchanged.",
+          "attachments": [
+            "returns_breakdown step 17"
+          ]
+        }
+      ],
+      "relaunch": {
+        "after_months": 4,
+        "condition": "revised M/L fit samples approved"
+      }
+    },
+    "impact": {
+      "annual_contribution_delta": 67329,
+      "method": "scenario step 19 (fix_fit: 4-month pause, relaunch at 32% return rate)"
+    },
+    "evidence_steps": [
+      8,
+      14,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "risks": [
+      "Post-fix return rate of 32% is an assumption; XS/S/XL run 22-26%. If the fix only reaches 45%, most of the gain disappears.",
+      "Pausing M/L is roughly CM-neutral on its own (-$1.5k/yr if permanent); it is justified by customer experience, not margin.",
+      "4-month pause assumes one sampling round; a second round extends it.",
+      "M/L demand during the pause is assumed lost (no substitution to other sizes)."
+    ],
+    "checks_performed": [
+      "returns by size and reason",
+      "XS/S/XL margin vs M/L",
+      "discontinue-style counterfactual (-$98k)",
+      "incremental vs allocated CM of paused sizes"
+    ],
+    "confidence": "medium",
+    "scenario_action": {
+      "id": "P-001",
+      "kind": "fix_fit",
+      "skus": [
+        "WRP-BLA-M",
+        "WRP-BLA-L",
+        "WRP-TER-M",
+        "WRP-TER-L"
+      ],
+      "pause_months": 4,
+      "target_return_rate": 0.32
+    },
+    "status": "pending",
+    "proposed_at": "2026-10-16T20:10:45.136Z"
+  },
+  {
+    "id": "P-002",
+    "title": "Raise free-shipping threshold from $50 to $75 (A/B first)",
+    "type": "change_shipping_threshold",
+    "target_system": "shopify",
+    "payload": {
+      "op": "shipping_profile.update",
+      "profile": "General (US domestic)",
+      "rates": [
+        {
+          "name": "Free shipping",
+          "condition": "subtotal_after_discounts >= 75.00",
+          "price": 0
+        },
+        {
+          "name": "Standard",
+          "condition": "subtotal_after_discounts < 75.00",
+          "price": 7.95
+        }
+      ],
+      "rollout": {
+        "type": "split_test",
+        "share": 0.5,
+        "duration_days": 28,
+        "success_metric": "CM per session"
+      }
+    },
+    "impact": {
+      "annual_contribution_delta": 18021,
+      "method": "scenario step 29 (threshold 75, 12% abandon of newly-charged orders, no trade-up)"
+    },
+    "evidence_steps": [
+      12,
+      23,
+      24,
+      25,
+      26,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "risks": [
+      "Conversion: 12% abandon is an assumption. $75 stays positive at 40% abandon (+$12.4k); $100 would not (-$20.3k).",
+      "Trade-up to clear $75 is real but not counted; upside, not modelled.",
+      "TEE2FOR50 pairs ($50) will now pay shipping; watch tee pair volume."
+    ],
+    "checks_performed": [
+      "order value bands at $10",
+      "five thresholds modelled (60/65/75/85/100)",
+      "abandon-rate stress test (25%/40%)",
+      "band mix by code and style"
+    ],
+    "confidence": "medium",
+    "scenario_action": {
+      "id": "P-002",
+      "kind": "shipping_threshold",
+      "threshold": 75
+    },
+    "status": "pending",
+    "proposed_at": "2026-10-16T20:10:45.552Z"
+  },
+  {
+    "id": "P-003",
+    "title": "Keep the Core Tee (decoy): do not discontinue",
+    "type": "keep_with_rationale",
+    "target_system": "shopify",
+    "payload": {
+      "op": "none",
+      "note": "No write. Tag product for review after P-002 lands.",
+      "tag": {
+        "skus_prefix": "TEE",
+        "add_tags": [
+          "core-keep",
+          "review-after-threshold-change"
+        ]
+      }
+    },
+    "impact": {
+      "annual_contribution_delta": 0,
+      "method": "scenario step 33 (keep; counterfactual cut at 10% basket halo = -$26.1k, breakeven halo 1.65%)"
+    },
+    "evidence_steps": [
+      8,
+      9,
+      21,
+      22,
+      27,
+      33,
+      34
+    ],
+    "risks": [
+      "Basket halo is unproven: mixed baskets with the tee are not more profitable per order ($74 vs $84 without).",
+      "If P-002 is rejected, the tee stays slightly CM-negative on an allocated basis (-$5.3k by revenue, -$20.5k by units).",
+      "TEE2FOR50 multi-buy is itself CM-negative (-12.4%); revisit it if the threshold stays at $50."
+    ],
+    "checks_performed": [
+      "basket attach (47% of mixed baskets)",
+      "mixed-basket margin with vs without",
+      "incremental vs allocated CM",
+      "allocation toggle",
+      "cut + threshold interaction",
+      "breakeven halo"
+    ],
+    "confidence": "high",
+    "scenario_action": {
+      "id": "P-003",
+      "kind": "keep",
+      "skus": [
+        "TEE"
+      ],
+      "counterfactual_halo": 0.1
+    },
+    "status": "pending",
+    "proposed_at": "2026-10-16T20:10:45.956Z"
+  },
+  {
+    "id": "P-004",
+    "title": "Replace WELCOME30 with WELCOME15 (split test), don't kill it",
+    "type": "change_discount_rule",
+    "target_system": "shopify",
+    "payload": {
+      "op": "price_rule.create_and_retire",
+      "create": {
+        "code": "WELCOME15",
+        "value_type": "percentage",
+        "value": -15,
+        "once_per_customer": true,
+        "prerequisite": "first order",
+        "combines_with": []
+      },
+      "retire": {
+        "code": "WELCOME30",
+        "ends_at": "on split-test completion"
+      },
+      "rollout": {
+        "type": "split_test",
+        "share": 0.5,
+        "surface": "email pop-up + paid social landing pages",
+        "duration_days": 60,
+        "success_metric": "CM per acquired customer at 60 days"
+      }
+    },
+    "impact": {
+      "annual_contribution_delta": 17574,
+      "method": "scenario step 39 (15% off, 80% acquisition retention)"
+    },
+    "evidence_steps": [
+      10,
+      15,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41
+    ],
+    "risks": [
+      "Retention at 15% is untested; breakeven is about 65% (step 40). Below that, the change loses money.",
+      "No CAC/marketing spend in the mirror, so payback per channel can't be checked.",
+      "10% of WELCOME30 customers become full-price buyers; a weaker offer may lose some of them."
+    ],
+    "checks_performed": [
+      "cohort 12-month value (tenure-matched)",
+      "full-price conversion",
+      "% repeat orders discounted",
+      "kill / 15% / 20% / $100-minimum modelled",
+      "retention sensitivity"
+    ],
+    "confidence": "low",
+    "scenario_action": {
+      "id": "P-004",
+      "kind": "discount_rule",
+      "code": "WELCOME30",
+      "new_pct": 0.15,
+      "retention": 0.8
+    },
+    "status": "pending",
+    "proposed_at": "2026-10-16T20:10:46.358Z"
+  },
+  {
+    "id": "P-005",
+    "title": "Draft POs for 6 stocked-out core M/L SKUs (polo + chino)",
+    "type": "create_po",
+    "target_system": "supplier_email",
+    "payload": {
+      "purchase_orders": [
+        {
+          "supplier_id": "SUP-02",
+          "supplier": "Kaveri Knit Mills (India)",
+          "lead_time_days": 52,
+          "moq_per_style_colour": 300,
+          "eta_if_issued_2026-09-30": "2026-11-21",
+          "lines": [
+            {
+              "sku": "POL-NAV-M",
+              "qty": 475,
+              "unit_fob": 18.6,
+              "needed_by": "2026-10-10"
+            },
+            {
+              "sku": "POL-NAV-L",
+              "qty": 395,
+              "unit_fob": 18.6,
+              "needed_by": "2026-10-08"
+            }
+          ]
+        },
+        {
+          "supplier_id": "SUP-03",
+          "supplier": "Song Lam Garment Co. (Vietnam)",
+          "lead_time_days": 58,
+          "moq_per_style_colour": 400,
+          "eta_if_issued_2026-09-30": "2026-11-27",
+          "lines": [
+            {
+              "sku": "CHN-KHA-M",
+              "qty": 343,
+              "unit_fob": 23.4,
+              "needed_by": "2026-10-07"
+            },
+            {
+              "sku": "CHN-KHA-L",
+              "qty": 338,
+              "unit_fob": 23.4,
+              "needed_by": "2026-10-10"
+            },
+            {
+              "sku": "CHN-NAV-M",
+              "qty": 296,
+              "unit_fob": 23.4,
+              "needed_by": "2026-10-09"
+            },
+            {
+              "sku": "CHN-NAV-L",
+              "qty": 232,
+              "unit_fob": 23.4,
+              "needed_by": "2026-10-11"
+            }
+          ]
+        }
+      ],
+      "method": "order-up-to = reorder point (velocity × lead time + 1.65σ√LT) + 10 weeks; MOQ checked per style-colour",
+      "open_question_for_operator": "Sea ETA misses projected stockout by 42-51 days and overlaps BFCM. Air-freight a partial (cost not in mirror)?"
+    },
+    "impact": {
+      "annual_contribution_delta": 12678,
+      "method": "scenario step 45 (trailing-12m lost units × incremental unit CM)"
+    },
+    "evidence_steps": [
+      42,
+      43,
+      44,
+      45,
+      57,
+      59
+    ],
+    "risks": [
+      "A 42-51 day gap is unavoidable by sea; this PO prevents the next stockout, not the current one.",
+      "Impact assumes last year's stockout pattern would repeat; it's a policy fix, not a one-off.",
+      "Kaveri on-time rate is 86%; a late PO extends the gap."
+    ],
+    "checks_performed": [
+      "weeks of cover vs lead time",
+      "safety stock and reorder point",
+      "MOQ per style-colour",
+      "projected stockout vs ETA",
+      "lost revenue from 12m stockout days"
+    ],
+    "confidence": "high",
+    "scenario_action": {
+      "id": "P-005",
+      "kind": "po",
+      "skus": [
+        "POL-NAV-M",
+        "POL-NAV-L",
+        "CHN-KHA-M",
+        "CHN-KHA-L",
+        "CHN-NAV-M",
+        "CHN-NAV-L"
+      ]
+    },
+    "status": "pending",
+    "proposed_at": "2026-10-16T20:10:46.767Z"
+  },
+  {
+    "id": "P-006",
+    "title": "Merino Crew Moss: no reorder; hold through Q4, 30% markdown on excess in January",
+    "type": "markdown",
+    "target_system": "shopify",
+    "payload": {
+      "writes": [
+        {
+          "system": "shopify",
+          "op": "variant.schedule_price",
+          "skus": [
+            "KNT-MOS-XS",
+            "KNT-MOS-S",
+            "KNT-MOS-M",
+            "KNT-MOS-L",
+            "KNT-MOS-XL"
+          ],
+          "starts_at": "2027-01-05",
+          "compare_at_price": 138,
+          "price_multiplier": 0.7
+        },
+        {
+          "system": "inventory",
+          "op": "reorder_policy.update",
+          "skus_prefix": "KNT-MOS",
+          "set": {
+            "reorder_enabled": false,
+            "reason": "32-37 weeks cover at peak velocity"
+          }
+        }
+      ]
+    },
+    "impact": {
+      "annual_contribution_delta": 23969,
+      "method": "scenario step 50 (30% off, 60% sell-through of excess beyond 16 weeks peak cover, 15% cannibalisation)"
+    },
+    "evidence_steps": [
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      60
+    ],
+    "risks": [
+      "Sell-through at 30% off is assumed (60%); a bundle (Moss crew + Overshirt) may clear without training customers to wait for sales.",
+      "Cannibalisation of Oatmeal full-price sales assumed at 15%.",
+      "Marking down too early would waste peak-season full-price demand, hence the January start."
+    ],
+    "checks_performed": [
+      "weeks of cover at trailing AND peak velocity",
+      "colourway comparison (Oatmeal healthy)",
+      "markdown depth 20% vs 30%",
+      "no-reorder check"
+    ],
+    "confidence": "medium",
+    "scenario_action": {
+      "id": "P-006",
+      "kind": "markdown",
+      "skus": [
+        "KNT-MOS-XS",
+        "KNT-MOS-S",
+        "KNT-MOS-M",
+        "KNT-MOS-L",
+        "KNT-MOS-XL"
+      ],
+      "markdown_pct": 0.3,
+      "target_weeks_cover": 16,
+      "sell_through": 0.6,
+      "cannibalization": 0.15
+    },
+    "status": "pending",
+    "proposed_at": "2026-10-16T20:10:47.174Z"
+  }
+]

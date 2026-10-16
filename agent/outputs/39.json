@@ -1,0 +1,126 @@
+{
+  "params": {
+    "allocation": "revenue",
+    "returnMultiplier": 1,
+    "freightPerOrder": null,
+    "threshold": 50
+  },
+  "actions": [
+    {
+      "id": "ALT-welcome-kill",
+      "kind": "discount_rule",
+      "code": "WELCOME30",
+      "new_pct": 0,
+      "retention": 0.5
+    },
+    {
+      "id": "P-004",
+      "kind": "discount_rule",
+      "code": "WELCOME30",
+      "new_pct": 0.15,
+      "retention": 0.8
+    },
+    {
+      "id": "ALT-welcome-30-min100",
+      "kind": "discount_rule",
+      "code": "WELCOME30",
+      "new_pct": 0.3,
+      "min_subtotal": 100,
+      "retention": 1,
+      "below_min_retention": 0.55
+    },
+    {
+      "id": "ALT-welcome-20",
+      "kind": "discount_rule",
+      "code": "WELCOME30",
+      "new_pct": 0.2,
+      "retention": 0.9
+    }
+  ],
+  "result": {
+    "baseline_cm": 1068855,
+    "scenario_cm": 1024009,
+    "combined_delta": -44846,
+    "sum_of_individual": 37592,
+    "interaction": -82438,
+    "actions": [
+      {
+        "id": "ALT-welcome-kill",
+        "kind": "discount_rule",
+        "annual_contribution_delta": 1013,
+        "detail": {},
+        "assumptions": [
+          {
+            "name": "Acquisition retained at new offer",
+            "value": "50%",
+            "confidence": "low"
+          },
+          {
+            "name": "Lost customers lose their whole 12-month value",
+            "value": "yes",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "id": "P-004",
+        "kind": "discount_rule",
+        "annual_contribution_delta": 17574,
+        "detail": {},
+        "assumptions": [
+          {
+            "name": "Acquisition retained at new offer",
+            "value": "80%",
+            "confidence": "low"
+          },
+          {
+            "name": "Lost customers lose their whole 12-month value",
+            "value": "yes",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "id": "ALT-welcome-30-min100",
+        "kind": "discount_rule",
+        "annual_contribution_delta": 1780,
+        "detail": {},
+        "assumptions": [
+          {
+            "name": "Acquisition retained at new offer",
+            "value": "100%",
+            "confidence": "low"
+          },
+          {
+            "name": "Below-minimum basket retention (<$100)",
+            "value": "55% buy at full price",
+            "confidence": "low"
+          },
+          {
+            "name": "Lost customers lose their whole 12-month value",
+            "value": "yes",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "id": "ALT-welcome-20",
+        "kind": "discount_rule",
+        "annual_contribution_delta": 17225,
+        "detail": {},
+        "assumptions": [
+          {
+            "name": "Acquisition retained at new offer",
+            "value": "90%",
+            "confidence": "low"
+          },
+          {
+            "name": "Lost customers lose their whole 12-month value",
+            "value": "yes",
+            "confidence": "medium"
+          }
+        ]
+      }
+    ]
+  }
+}

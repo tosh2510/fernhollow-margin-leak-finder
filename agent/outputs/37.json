@@ -1,0 +1,68 @@
+{
+  "params": {
+    "allocation": "revenue",
+    "returnMultiplier": 1,
+    "freightPerOrder": null,
+    "threshold": 50
+  },
+  "by": "channel",
+  "note": "New customers only. Tenure-matched = acquired Oct–Mar (6–12 months observed). Discounted = promo code (TEE2FOR50 multi-buy excluded).",
+  "rows": [
+    {
+      "cohort": "paid_social",
+      "customers": 4270,
+      "customers_tenure_matched": 2220,
+      "first_order_cm": 35.53,
+      "value_cm_per_customer": 53.17,
+      "value_cm_per_customer_tenure_matched": 62,
+      "net_revenue_per_customer_tenure_matched": 166.1,
+      "repeat_rate_tenure_matched": 0.42,
+      "pct_repeat_orders_discounted": 0.28,
+      "full_price_conversion": 0.24,
+      "full_price_converters": 1015,
+      "converter_value_cm": 104.38
+    },
+    {
+      "cohort": "search",
+      "customers": 1866,
+      "customers_tenure_matched": 980,
+      "first_order_cm": 45.24,
+      "value_cm_per_customer": 68.18,
+      "value_cm_per_customer_tenure_matched": 76.18,
+      "net_revenue_per_customer_tenure_matched": 187.21,
+      "repeat_rate_tenure_matched": 0.46,
+      "pct_repeat_orders_discounted": 0.05,
+      "full_price_conversion": 0.36,
+      "full_price_converters": 663,
+      "converter_value_cm": 108.04
+    },
+    {
+      "cohort": "organic",
+      "customers": 1674,
+      "customers_tenure_matched": 881,
+      "first_order_cm": 44.43,
+      "value_cm_per_customer": 66.44,
+      "value_cm_per_customer_tenure_matched": 75.95,
+      "net_revenue_per_customer_tenure_matched": 183.12,
+      "repeat_rate_tenure_matched": 0.43,
+      "pct_repeat_orders_discounted": 0.08,
+      "full_price_conversion": 0.32,
+      "full_price_converters": 537,
+      "converter_value_cm": 110
+    },
+    {
+      "cohort": "email",
+      "customers": 1155,
+      "customers_tenure_matched": 626,
+      "first_order_cm": 35.07,
+      "value_cm_per_customer": 57.56,
+      "value_cm_per_customer_tenure_matched": 67.06,
+      "net_revenue_per_customer_tenure_matched": 175.62,
+      "repeat_rate_tenure_matched": 0.44,
+      "pct_repeat_orders_discounted": 0.25,
+      "full_price_conversion": 0.26,
+      "full_price_converters": 297,
+      "converter_value_cm": 114.4
+    }
+  ]
+}

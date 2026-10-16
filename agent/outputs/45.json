@@ -1,0 +1,52 @@
+{
+  "params": {
+    "allocation": "revenue",
+    "returnMultiplier": 1,
+    "freightPerOrder": null,
+    "threshold": 50
+  },
+  "actions": [
+    {
+      "id": "P-005",
+      "kind": "po",
+      "skus": [
+        "POL-NAV-M",
+        "POL-NAV-L",
+        "CHN-KHA-M",
+        "CHN-KHA-L",
+        "CHN-NAV-M",
+        "CHN-NAV-L"
+      ]
+    }
+  ],
+  "result": {
+    "baseline_cm": 1068855,
+    "scenario_cm": 1081534,
+    "combined_delta": 12678,
+    "sum_of_individual": 12678,
+    "interaction": 0,
+    "actions": [
+      {
+        "id": "P-005",
+        "kind": "po",
+        "annual_contribution_delta": 12678,
+        "detail": {
+          "recovered_units_per_year": 405,
+          "method": "trailing-12m stockout lost units × incremental unit CM"
+        },
+        "assumptions": [
+          {
+            "name": "Past 12m stockout pattern recurs without a reorder policy",
+            "value": "yes",
+            "confidence": "medium"
+          },
+          {
+            "name": "Substitution during stockout",
+            "value": "25%",
+            "confidence": "medium"
+          }
+        ]
+      }
+    ]
+  }
+}

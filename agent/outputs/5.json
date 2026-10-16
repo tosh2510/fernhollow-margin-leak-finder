@@ -1,0 +1,32 @@
+{
+  "table": "inventory",
+  "system": "Inventory",
+  "rows": 80,
+  "description": "Snapshot as of 2026-09-30. velocity = trailing 13-week avg units/week. moq is per style-colour.",
+  "fields": {
+    "sku": "string",
+    "on_hand": "units",
+    "weekly_sales_velocity": "units/week",
+    "supplier": "supplier_id",
+    "lead_time_days": "int",
+    "moq": "units per style-colour"
+  },
+  "sample": [
+    {
+      "sku": "TEE-WHI-XS",
+      "on_hand": 122,
+      "weekly_sales_velocity": 7.69,
+      "supplier": "SUP-01",
+      "lead_time_days": 45,
+      "moq": 300
+    },
+    {
+      "sku": "TEE-WHI-S",
+      "on_hand": 309,
+      "weekly_sales_velocity": 17.23,
+      "supplier": "SUP-01",
+      "lead_time_days": 45,
+      "moq": 300
+    }
+  ]
+}

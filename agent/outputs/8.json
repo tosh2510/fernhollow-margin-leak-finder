@@ -1,0 +1,119 @@
+{
+  "params": {
+    "allocation": "revenue",
+    "returnMultiplier": 1,
+    "freightPerOrder": null,
+    "threshold": 50
+  },
+  "by": "sku",
+  "rows": [
+    {
+      "key": "WRP-BLA-L",
+      "cm": -2920.82,
+      "cm_pct": -0.0961,
+      "net_revenue": 30406.6,
+      "units": 635,
+      "return_rate": 0.658,
+      "orders": 617
+    },
+    {
+      "key": "WRP-BLA-M",
+      "cm": -2608.79,
+      "cm_pct": -0.0697,
+      "net_revenue": 37421.8,
+      "units": 765,
+      "return_rate": 0.65,
+      "orders": 741
+    },
+    {
+      "key": "TEE-WHI-M",
+      "cm": -1015.32,
+      "cm_pct": -0.0364,
+      "net_revenue": 27891.6,
+      "units": 1225,
+      "return_rate": 0.104,
+      "orders": 1116
+    },
+    {
+      "key": "TEE-WHI-L",
+      "cm": -813.85,
+      "cm_pct": -0.0324,
+      "net_revenue": 25094.6,
+      "units": 1100,
+      "return_rate": 0.102,
+      "orders": 988
+    },
+    {
+      "key": "TEE-BLA-XL",
+      "cm": -650.32,
+      "cm_pct": -0.049,
+      "net_revenue": 13259.6,
+      "units": 588,
+      "return_rate": 0.104,
+      "orders": 527
+    },
+    {
+      "key": "WRP-TER-L",
+      "cm": -595.02,
+      "cm_pct": -0.0217,
+      "net_revenue": 27409.6,
+      "units": 523,
+      "return_rate": 0.625,
+      "orders": 513
+    },
+    {
+      "key": "TEE-BLA-M",
+      "cm": -500.04,
+      "cm_pct": -0.0195,
+      "net_revenue": 25652,
+      "units": 1107,
+      "return_rate": 0.094,
+      "orders": 1029
+    },
+    {
+      "key": "TEE-WHI-XS",
+      "cm": -366.7,
+      "cm_pct": -0.0405,
+      "net_revenue": 9058,
+      "units": 394,
+      "return_rate": 0.096,
+      "orders": 353
+    },
+    {
+      "key": "TEE-BLA-XS",
+      "cm": -313.92,
+      "cm_pct": -0.041,
+      "net_revenue": 7656.8,
+      "units": 338,
+      "return_rate": 0.112,
+      "orders": 307
+    },
+    {
+      "key": "TEE-BLA-S",
+      "cm": -247.59,
+      "cm_pct": -0.0131,
+      "net_revenue": 18873,
+      "units": 808,
+      "return_rate": 0.084,
+      "orders": 744
+    },
+    {
+      "key": "TEE-HEA-S",
+      "cm": -244.44,
+      "cm_pct": -0.0173,
+      "net_revenue": 14106.4,
+      "units": 600,
+      "return_rate": 0.087,
+      "orders": 557
+    },
+    {
+      "key": "TEE-WHI-S",
+      "cm": -228.87,
+      "cm_pct": -0.0107,
+      "net_revenue": 21457.6,
+      "units": 920,
+      "return_rate": 0.086,
+      "orders": 832
+    }
+  ]
+}

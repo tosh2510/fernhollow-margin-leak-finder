@@ -1,0 +1,71 @@
+{
+  "params": {
+    "allocation": "revenue",
+    "returnMultiplier": 1,
+    "freightPerOrder": null,
+    "threshold": 50
+  },
+  "by": "style",
+  "filter": {
+    "band": "$50–65"
+  },
+  "groups": [
+    {
+      "key": "Core Tee",
+      "gross": 89824,
+      "discounts": 10663.8,
+      "refunds": 6645.6,
+      "netRevenue": 72514.6,
+      "cogs": 55891.11,
+      "writeoffs": 647.02,
+      "fees": 2766.95,
+      "shipping": 15187.92,
+      "pickpack": 5940.75,
+      "returnCosts": 4143.67,
+      "cm": -12062.82,
+      "cmPct": -0.1664,
+      "units": 3208,
+      "returnedUnits": 271,
+      "returnRate": 0.0845,
+      "orders": 1571
+    },
+    {
+      "key": "Knit Polo",
+      "gross": 30030,
+      "discounts": 7733.7,
+      "refunds": 4695.6,
+      "netRevenue": 17600.7,
+      "cogs": 6979.84,
+      "writeoffs": 252.56,
+      "fees": 762.09,
+      "shipping": 3248.18,
+      "pickpack": 1155,
+      "returnCosts": 1277.68,
+      "cm": 3925.35,
+      "cmPct": 0.223,
+      "units": 385,
+      "returnedUnits": 81,
+      "returnRate": 0.2104,
+      "orders": 385
+    },
+    {
+      "key": "Linen Shirt",
+      "gross": 12848,
+      "discounts": 3854.4,
+      "refunds": 1909.6,
+      "netRevenue": 7084,
+      "cogs": 2918.7,
+      "writeoffs": 76.14,
+      "fees": 304.61,
+      "shipping": 1223.66,
+      "pickpack": 438,
+      "returnCosts": 486.63,
+      "cm": 1636.26,
+      "cmPct": 0.231,
+      "units": 146,
+      "returnedUnits": 31,
+      "returnRate": 0.2123,
+      "orders": 146
+    }
+  ]
+}

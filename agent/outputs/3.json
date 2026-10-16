@@ -1,0 +1,35 @@
+{
+  "table": "shopify_refunds",
+  "system": "Shopify",
+  "rows": 9825,
+  "description": "Refunded units. amount = unit price net of allocated discount × qty. Shipping not refunded.",
+  "fields": {
+    "refund_id": "string",
+    "order_id": "string",
+    "sku": "string",
+    "qty": "int",
+    "amount": "USD",
+    "reason": "size_too_small|size_too_large|changed_mind|not_as_pictured|quality|arrived_late",
+    "refunded_at": "date"
+  },
+  "sample": [
+    {
+      "refund_id": "R-500001",
+      "order_id": "FH-100002",
+      "sku": "TEE-WHI-M",
+      "qty": 1,
+      "amount": 28,
+      "reason": "size_too_large",
+      "refunded_at": "2025-10-28"
+    },
+    {
+      "refund_id": "R-500002",
+      "order_id": "FH-100006",
+      "sku": "POL-NAV-S",
+      "qty": 1,
+      "amount": 78,
+      "reason": "changed_mind",
+      "refunded_at": "2025-10-29"
+    }
+  ]
+}

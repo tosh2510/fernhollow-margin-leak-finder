@@ -1,0 +1,101 @@
+{
+  "params": {
+    "allocation": "units",
+    "returnMultiplier": 1,
+    "freightPerOrder": null,
+    "threshold": 50
+  },
+  "by": "sku",
+  "rows": [
+    {
+      "key": "TEE-WHI-M",
+      "cm": -2719.4,
+      "cm_pct": -0.0975,
+      "net_revenue": 27891.6,
+      "units": 1225,
+      "return_rate": 0.104,
+      "orders": 1116
+    },
+    {
+      "key": "TEE-WHI-L",
+      "cm": -2345.18,
+      "cm_pct": -0.0935,
+      "net_revenue": 25094.6,
+      "units": 1100,
+      "return_rate": 0.102,
+      "orders": 988
+    },
+    {
+      "key": "WRP-BLA-L",
+      "cm": -2160.8,
+      "cm_pct": -0.0711,
+      "net_revenue": 30406.6,
+      "units": 635,
+      "return_rate": 0.658,
+      "orders": 617
+    },
+    {
+      "key": "TEE-BLA-M",
+      "cm": -2093.13,
+      "cm_pct": -0.0816,
+      "net_revenue": 25652,
+      "units": 1107,
+      "return_rate": 0.094,
+      "orders": 1029
+    },
+    {
+      "key": "WRP-BLA-M",
+      "cm": -1754.23,
+      "cm_pct": -0.0469,
+      "net_revenue": 37421.8,
+      "units": 765,
+      "return_rate": 0.65,
+      "orders": 741
+    },
+    {
+      "key": "TEE-BLA-L",
+      "cm": -1642.49,
+      "cm_pct": -0.0702,
+      "net_revenue": 23396.4,
+      "units": 999,
+      "return_rate": 0.086,
+      "orders": 915
+    },
+    {
+      "key": "TEE-WHI-S",
+      "cm": -1563.64,
+      "cm_pct": -0.0729,
+      "net_revenue": 21457.6,
+      "units": 920,
+      "return_rate": 0.086,
+      "orders": 832
+    },
+    {
+      "key": "TEE-BLA-XL",
+      "cm": -1441.24,
+      "cm_pct": -0.1087,
+      "net_revenue": 13259.6,
+      "units": 588,
+      "return_rate": 0.104,
+      "orders": 527
+    },
+    {
+      "key": "TEE-BLA-S",
+      "cm": -1358.34,
+      "cm_pct": -0.072,
+      "net_revenue": 18873,
+      "units": 808,
+      "return_rate": 0.084,
+      "orders": 744
+    },
+    {
+      "key": "TEE-HEA-M",
+      "cm": -1303.17,
+      "cm_pct": -0.0647,
+      "net_revenue": 20141.8,
+      "units": 859,
+      "return_rate": 0.078,
+      "orders": 808
+    }
+  ]
+}

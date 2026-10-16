@@ -1,0 +1,52 @@
+{
+  "params": {
+    "allocation": "revenue",
+    "returnMultiplier": 1,
+    "freightPerOrder": null,
+    "threshold": 50
+  },
+  "by": "band",
+  "filter": {
+    "code": "TEE2FOR50"
+  },
+  "groups": [
+    {
+      "key": "$50–65",
+      "gross": 84280,
+      "discounts": 9030,
+      "refunds": 6150,
+      "netRevenue": 69100,
+      "cogs": 52598.92,
+      "writeoffs": 589.93,
+      "fees": 2633.75,
+      "shipping": 14468.1,
+      "pickpack": 5643.75,
+      "returnCosts": 3784.86,
+      "cm": -10619.31,
+      "cmPct": -0.1537,
+      "units": 3010,
+      "returnedUnits": 246,
+      "returnRate": 0.0817,
+      "orders": 1505
+    },
+    {
+      "key": "$65–100",
+      "gross": 35616,
+      "discounts": 2544,
+      "refunds": 3198,
+      "netRevenue": 29874,
+      "cogs": 21865.47,
+      "writeoffs": 228.36,
+      "fees": 1086.29,
+      "shipping": 4588.41,
+      "pickpack": 1908,
+      "returnCosts": 1848.61,
+      "cm": -1651.14,
+      "cmPct": -0.0553,
+      "units": 1272,
+      "returnedUnits": 123,
+      "returnRate": 0.0967,
+      "orders": 424
+    }
+  ]
+}

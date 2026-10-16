@@ -1,0 +1,48 @@
+{
+  "table": "suppliers",
+  "system": "Inventory",
+  "rows": 6,
+  "description": "Supplier master.",
+  "fields": {
+    "supplier_id": "string",
+    "name": "string",
+    "country": "string",
+    "lead_time_days": "int",
+    "moq": "units per style-colour",
+    "on_time_rate": "fraction"
+  },
+  "matched": [
+    {
+      "supplier_id": "SUP-02",
+      "name": "Kaveri Knit Mills",
+      "country": "India",
+      "lead_time_days": 52,
+      "moq": 300,
+      "on_time_rate": 0.86
+    },
+    {
+      "supplier_id": "SUP-03",
+      "name": "Song Lam Garment Co.",
+      "country": "Vietnam",
+      "lead_time_days": 58,
+      "moq": 400,
+      "on_time_rate": 0.9
+    },
+    {
+      "supplier_id": "SUP-05",
+      "name": "Ege Jersey Tekstil",
+      "country": "Turkey",
+      "lead_time_days": 42,
+      "moq": 200,
+      "on_time_rate": 0.91
+    },
+    {
+      "supplier_id": "SUP-06",
+      "name": "Huzhou Fine Knit",
+      "country": "China",
+      "lead_time_days": 60,
+      "moq": 300,
+      "on_time_rate": 0.88
+    }
+  ]
+}

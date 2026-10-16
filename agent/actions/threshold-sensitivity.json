@@ -1,0 +1,6 @@
+{ "actions": [
+  { "id": "SENS-75-a25", "kind": "shipping_threshold", "threshold": 75, "abandon": 0.25 },
+  { "id": "SENS-75-a40", "kind": "shipping_threshold", "threshold": 75, "abandon": 0.40 },
+  { "id": "SENS-100-a25", "kind": "shipping_threshold", "threshold": 100, "abandon": 0.25 },
+  { "id": "SENS-100-a40", "kind": "shipping_threshold", "threshold": 100, "abandon": 0.40 }
+]}

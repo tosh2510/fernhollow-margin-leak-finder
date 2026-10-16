@@ -1,0 +1,5 @@
+{ "actions": [
+  { "id": "P-003", "kind": "keep", "skus": ["TEE"], "counterfactual_halo": 0.10 },
+  { "id": "ALT-tee-cut-after-threshold", "kind": "pause_skus", "skus": ["TEE"], "months": 12, "halo": 0 },
+  { "id": "ALT-threshold-75", "kind": "shipping_threshold", "threshold": 75 }
+]}

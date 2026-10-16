@@ -1,0 +1,16 @@
+{
+  "id": "P-003",
+  "title": "Keep the Core Tee (decoy): do not discontinue",
+  "type": "keep_with_rationale",
+  "target_system": "shopify",
+  "payload": { "op": "none", "note": "No write. Tag product for review after P-002 lands.", "tag": { "skus_prefix": "TEE", "add_tags": ["core-keep", "review-after-threshold-change"] } },
+  "impact": { "annual_contribution_delta": 0, "method": "scenario step 33 (keep; counterfactual cut at 10% basket halo = -$26.1k, breakeven halo 1.65%)" },
+  "evidence_steps": [8, 9, 21, 22, 27, 33, 34],
+  "risks": [
+    "Basket halo is unproven: mixed baskets with the tee are not more profitable per order ($74 vs $84 without).",
+    "If P-002 is rejected, the tee stays slightly CM-negative on an allocated basis (-$5.3k by revenue, -$20.5k by units).",
+    "TEE2FOR50 multi-buy is itself CM-negative (-12.4%); revisit it if the threshold stays at $50."
+  ],
+  "checks_performed": ["basket attach (47% of mixed baskets)", "mixed-basket margin with vs without", "incremental vs allocated CM", "allocation toggle", "cut + threshold interaction", "breakeven halo"],
+  "confidence": "high"
+}

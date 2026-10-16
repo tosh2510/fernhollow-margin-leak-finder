@@ -1,0 +1,69 @@
+{
+  "params": {
+    "allocation": "revenue",
+    "returnMultiplier": 1,
+    "freightPerOrder": null,
+    "threshold": 50
+  },
+  "actions": [
+    {
+      "id": "SENS-15-r70",
+      "kind": "discount_rule",
+      "code": "WELCOME30",
+      "new_pct": 0.15,
+      "retention": 0.7
+    },
+    {
+      "id": "SENS-15-r60",
+      "kind": "discount_rule",
+      "code": "WELCOME30",
+      "new_pct": 0.15,
+      "retention": 0.6
+    }
+  ],
+  "result": {
+    "baseline_cm": 1068855,
+    "scenario_cm": 1039661,
+    "combined_delta": -29195,
+    "sum_of_individual": -1774,
+    "interaction": -27421,
+    "actions": [
+      {
+        "id": "SENS-15-r70",
+        "kind": "discount_rule",
+        "annual_contribution_delta": 5267,
+        "detail": {},
+        "assumptions": [
+          {
+            "name": "Acquisition retained at new offer",
+            "value": "70%",
+            "confidence": "low"
+          },
+          {
+            "name": "Lost customers lose their whole 12-month value",
+            "value": "yes",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "id": "SENS-15-r60",
+        "kind": "discount_rule",
+        "annual_contribution_delta": -7041,
+        "detail": {},
+        "assumptions": [
+          {
+            "name": "Acquisition retained at new offer",
+            "value": "60%",
+            "confidence": "low"
+          },
+          {
+            "name": "Lost customers lose their whole 12-month value",
+            "value": "yes",
+            "confidence": "medium"
+          }
+        ]
+      }
+    ]
+  }
+}

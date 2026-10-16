@@ -1,0 +1,88 @@
+{
+  "params": {
+    "allocation": "revenue",
+    "returnMultiplier": 1,
+    "freightPerOrder": null,
+    "threshold": 50
+  },
+  "by": "company",
+  "filter": null,
+  "groups": [
+    {
+      "key": "Company",
+      "gross": 3872546,
+      "discounts": 212582.2,
+      "refunds": 999355.7,
+      "netRevenue": 2660608.1,
+      "cogs": 958780.31,
+      "writeoffs": 71052.09,
+      "fees": 113847.05,
+      "shipping": 216538.91,
+      "pickpack": 87475.5,
+      "returnCosts": 144058.76,
+      "cm": 1068855.48,
+      "cmPct": 0.4017,
+      "units": 43002,
+      "returnedUnits": 9837,
+      "returnRate": 0.2288,
+      "orders": 24544,
+      "steps": [
+        {
+          "label": "Gross sales at list",
+          "value": 3872546,
+          "kind": "total"
+        },
+        {
+          "label": "Discounts",
+          "value": -212582.2,
+          "kind": "delta"
+        },
+        {
+          "label": "Refunds",
+          "value": -999355.7,
+          "kind": "delta"
+        },
+        {
+          "label": "Net revenue",
+          "value": 2660608.1,
+          "kind": "total"
+        },
+        {
+          "label": "Landed COGS (kept units)",
+          "value": -958780.31,
+          "kind": "delta"
+        },
+        {
+          "label": "Write-offs (unrestocked returns)",
+          "value": -71052.09,
+          "kind": "delta"
+        },
+        {
+          "label": "Payment fees",
+          "value": -113847.05,
+          "kind": "delta"
+        },
+        {
+          "label": "Outbound shipping (net of shipping charged)",
+          "value": -216538.91,
+          "kind": "delta"
+        },
+        {
+          "label": "Pick & pack",
+          "value": -87475.5,
+          "kind": "delta"
+        },
+        {
+          "label": "Return processing + labels",
+          "value": -144058.76,
+          "kind": "delta"
+        },
+        {
+          "label": "Contribution margin",
+          "value": 1068855.48,
+          "kind": "total"
+        }
+      ]
+    }
+  ]
+}

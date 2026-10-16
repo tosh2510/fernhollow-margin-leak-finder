@@ -1,0 +1,94 @@
+{
+  "params": {
+    "allocation": "revenue",
+    "returnMultiplier": 1,
+    "freightPerOrder": null,
+    "threshold": 50
+  },
+  "actions": [
+    {
+      "id": "P-003",
+      "kind": "keep",
+      "skus": [
+        "TEE"
+      ],
+      "counterfactual_halo": 0.1
+    },
+    {
+      "id": "ALT-tee-cut-after-threshold",
+      "kind": "pause_skus",
+      "skus": [
+        "TEE"
+      ],
+      "months": 12,
+      "halo": 0
+    },
+    {
+      "id": "ALT-threshold-75",
+      "kind": "shipping_threshold",
+      "threshold": 75
+    }
+  ],
+  "result": {
+    "baseline_cm": 1068855,
+    "scenario_cm": 1080146,
+    "combined_delta": 11291,
+    "sum_of_individual": 23170,
+    "interaction": -11879,
+    "actions": [
+      {
+        "id": "P-003",
+        "kind": "keep",
+        "annual_contribution_delta": 0,
+        "detail": {
+          "counterfactual_cut_delta": -26142,
+          "counterfactual_cut_delta_no_halo": 5149,
+          "breakeven_halo": 0.0165
+        },
+        "assumptions": [
+          {
+            "name": "Counterfactual basket halo if cut",
+            "value": "10%",
+            "confidence": "low"
+          }
+        ]
+      },
+      {
+        "id": "ALT-tee-cut-after-threshold",
+        "kind": "pause_skus",
+        "annual_contribution_delta": 5149,
+        "detail": {},
+        "assumptions": [
+          {
+            "name": "Basket halo (orders lost with the SKU)",
+            "value": "0%",
+            "confidence": "low"
+          },
+          {
+            "name": "Order base costs persist when other items remain",
+            "value": "yes (incremental method)",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "id": "ALT-threshold-75",
+        "kind": "shipping_threshold",
+        "annual_contribution_delta": 18021,
+        "detail": {},
+        "assumptions": [
+          {
+            "name": "Abandon rate among newly-charged orders",
+            "value": "12%",
+            "confidence": "low"
+          },
+          {
+            "name": "Trade-up to clear threshold",
+            "value": "not counted",
+            "confidence": "medium"
+          }
+        ]
+      }
+    ]
+  }
+}

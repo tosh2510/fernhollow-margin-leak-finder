@@ -1,0 +1,48 @@
+{
+  "table": "inventory",
+  "system": "Inventory",
+  "rows": 80,
+  "description": "Snapshot as of 2026-09-30. velocity = trailing 13-week avg units/week. moq is per style-colour.",
+  "fields": {
+    "sku": "string",
+    "on_hand": "units",
+    "weekly_sales_velocity": "units/week",
+    "supplier": "supplier_id",
+    "lead_time_days": "int",
+    "moq": "units per style-colour"
+  },
+  "matched": [
+    {
+      "sku": "WRP-BLA-M",
+      "on_hand": 286,
+      "weekly_sales_velocity": 15.23,
+      "supplier": "SUP-05",
+      "lead_time_days": 42,
+      "moq": 200
+    },
+    {
+      "sku": "WRP-BLA-L",
+      "on_hand": 193,
+      "weekly_sales_velocity": 12.31,
+      "supplier": "SUP-05",
+      "lead_time_days": 42,
+      "moq": 200
+    },
+    {
+      "sku": "WRP-TER-M",
+      "on_hand": 238,
+      "weekly_sales_velocity": 12.85,
+      "supplier": "SUP-05",
+      "lead_time_days": 42,
+      "moq": 200
+    },
+    {
+      "sku": "WRP-TER-L",
+      "on_hand": 167,
+      "weekly_sales_velocity": 10.08,
+      "supplier": "SUP-05",
+      "lead_time_days": 42,
+      "moq": 200
+    }
+  ]
+}

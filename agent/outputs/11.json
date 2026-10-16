@@ -1,0 +1,47 @@
+{
+  "params": {
+    "allocation": "revenue",
+    "returnMultiplier": 1,
+    "freightPerOrder": null,
+    "threshold": 50
+  },
+  "by": "channel",
+  "rows": [
+    {
+      "key": "search",
+      "cm": 171788.67,
+      "cm_pct": 0.4173,
+      "net_revenue": 411690.5,
+      "units": 6460,
+      "return_rate": 0.229,
+      "orders": 3665
+    },
+    {
+      "key": "paid_social",
+      "cm": 275475.46,
+      "cm_pct": 0.3775,
+      "net_revenue": 729825.8,
+      "units": 12278,
+      "return_rate": 0.228,
+      "orders": 7031
+    },
+    {
+      "key": "organic",
+      "cm": 303330.81,
+      "cm_pct": 0.4109,
+      "net_revenue": 738280.3,
+      "units": 11779,
+      "return_rate": 0.229,
+      "orders": 6720
+    },
+    {
+      "key": "email",
+      "cm": 318260.54,
+      "cm_pct": 0.4076,
+      "net_revenue": 780811.5,
+      "units": 12485,
+      "return_rate": 0.229,
+      "orders": 7128
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "params": {
+    "allocation": "revenue",
+    "returnMultiplier": 1,
+    "freightPerOrder": null,
+    "threshold": 50
+  },
+  "by": "style",
+  "rows": [
+    {
+      "key": "Core Tee",
+      "cm": -5284.59,
+      "cm_pct": -0.021,
+      "net_revenue": 251795.2,
+      "units": 10872,
+      "return_rate": 0.091,
+      "orders": 7913
+    },
+    {
+      "key": "Slip Dress",
+      "cm": 78051.49,
+      "cm_pct": 0.4444,
+      "net_revenue": 175628.8,
+      "units": 2250,
+      "return_rate": 0.356,
+      "orders": 2192
+    },
+    {
+      "key": "Wrap Dress",
+      "cm": 84853.13,
+      "cm_pct": 0.2604,
+      "net_revenue": 325814.6,
+      "units": 4394,
+      "return_rate": 0.471,
+      "orders": 4131
+    },
+    {
+      "key": "Linen Shirt",
+      "cm": 128563.4,
+      "cm_pct": 0.4704,
+      "net_revenue": 273288.4,
+      "units": 4255,
+      "return_rate": 0.234,
+      "orders": 3901
+    },
+    {
+      "key": "Overshirt",
+      "cm": 147174.07,
+      "cm_pct": 0.5183,
+      "net_revenue": 283961.1,
+      "units": 3196,
+      "return_rate": 0.204,
+      "orders": 3043
+    },
+    {
+      "key": "Knit Polo",
+      "cm": 155352.3,
+      "cm_pct": 0.4675,
+      "net_revenue": 332307.3,
+      "units": 5577,
+      "return_rate": 0.195,
+      "orders": 5129
+    },
+    {
+      "key": "Chino",
+      "cm": 204466.46,
+      "cm_pct": 0.4504,
+      "net_revenue": 453965.4,
+      "units": 6899,
+      "return_rate": 0.294,
+      "orders": 6255
+    },
+    {
+      "key": "Merino Crew",
+      "cm": 275679.22,
+      "cm_pct": 0.4889,
+      "net_revenue": 563847.3,
+      "units": 5559,
+      "return_rate": 0.218,
+      "orders": 4937
+    }
+  ]
+}

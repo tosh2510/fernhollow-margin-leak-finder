@@ -1,0 +1,63 @@
+{
+  "id": "P-002",
+  "title": "Raise free-shipping threshold from $50 to $75 (A/B first)",
+  "type": "change_shipping_threshold",
+  "target_system": "shopify",
+  "payload": {
+    "op": "shipping_profile.update",
+    "profile": "General (US domestic)",
+    "rates": [
+      {
+        "name": "Free shipping",
+        "condition": "subtotal_after_discounts >= 75.00",
+        "price": 0
+      },
+      {
+        "name": "Standard",
+        "condition": "subtotal_after_discounts < 75.00",
+        "price": 7.95
+      }
+    ],
+    "rollout": {
+      "type": "split_test",
+      "share": 0.5,
+      "duration_days": 28,
+      "success_metric": "CM per session"
+    }
+  },
+  "impact": {
+    "annual_contribution_delta": 18021,
+    "method": "scenario step 29 (threshold 75, 12% abandon of newly-charged orders, no trade-up)"
+  },
+  "evidence_steps": [
+    12,
+    23,
+    24,
+    25,
+    26,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "risks": [
+    "Conversion: 12% abandon is an assumption. $75 stays positive at 40% abandon (+$12.4k); $100 would not (-$20.3k).",
+    "Trade-up to clear $75 is real but not counted; upside, not modelled.",
+    "TEE2FOR50 pairs ($50) will now pay shipping; watch tee pair volume."
+  ],
+  "checks_performed": [
+    "order value bands at $10",
+    "five thresholds modelled (60/65/75/85/100)",
+    "abandon-rate stress test (25%/40%)",
+    "band mix by code and style"
+  ],
+  "confidence": "medium",
+  "scenario_action": {
+    "id": "P-002",
+    "kind": "shipping_threshold",
+    "threshold": 75
+  },
+  "status": "pending",
+  "proposed_at": "2026-10-16T20:10:45.552Z"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "P-006",
+  "title": "Merino Crew Moss: no reorder; hold through Q4, 30% markdown on excess in January",
+  "type": "markdown",
+  "target_system": "shopify",
+  "payload": {
+    "writes": [
+      {
+        "system": "shopify",
+        "op": "variant.schedule_price",
+        "skus": [
+          "KNT-MOS-XS",
+          "KNT-MOS-S",
+          "KNT-MOS-M",
+          "KNT-MOS-L",
+          "KNT-MOS-XL"
+        ],
+        "starts_at": "2027-01-05",
+        "compare_at_price": 138,
+        "price_multiplier": 0.7
+      },
+      {
+        "system": "inventory",
+        "op": "reorder_policy.update",
+        "skus_prefix": "KNT-MOS",
+        "set": {
+          "reorder_enabled": false,
+          "reason": "32-37 weeks cover at peak velocity"
+        }
+      }
+    ]
+  },
+  "impact": {
+    "annual_contribution_delta": 23969,
+    "method": "scenario step 50 (30% off, 60% sell-through of excess beyond 16 weeks peak cover, 15% cannibalisation)"
+  },
+  "evidence_steps": [
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    60
+  ],
+  "risks": [
+    "Sell-through at 30% off is assumed (60%); a bundle (Moss crew + Overshirt) may clear without training customers to wait for sales.",
+    "Cannibalisation of Oatmeal full-price sales assumed at 15%.",
+    "Marking down too early would waste peak-season full-price demand, hence the January start."
+  ],
+  "checks_performed": [
+    "weeks of cover at trailing AND peak velocity",
+    "colourway comparison (Oatmeal healthy)",
+    "markdown depth 20% vs 30%",
+    "no-reorder check"
+  ],
+  "confidence": "medium",
+  "scenario_action": {
+    "id": "P-006",
+    "kind": "markdown",
+    "skus": [
+      "KNT-MOS-XS",
+      "KNT-MOS-S",
+      "KNT-MOS-M",
+      "KNT-MOS-L",
+      "KNT-MOS-XL"
+    ],
+    "markdown_pct": 0.3,
+    "target_weeks_cover": 16,
+    "sell_through": 0.6,
+    "cannibalization": 0.15
+  },
+  "status": "pending",
+  "proposed_at": "2026-10-16T20:10:47.174Z"
+}

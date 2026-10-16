@@ -1,0 +1,21 @@
+{
+  "id": "P-004",
+  "title": "Replace WELCOME30 with WELCOME15 (split test), don't kill it",
+  "type": "change_discount_rule",
+  "target_system": "shopify",
+  "payload": {
+    "op": "price_rule.create_and_retire",
+    "create": { "code": "WELCOME15", "value_type": "percentage", "value": -15, "once_per_customer": true, "prerequisite": "first order", "combines_with": [] },
+    "retire": { "code": "WELCOME30", "ends_at": "on split-test completion" },
+    "rollout": { "type": "split_test", "share": 0.5, "surface": "email pop-up + paid social landing pages", "duration_days": 60, "success_metric": "CM per acquired customer at 60 days" }
+  },
+  "impact": { "annual_contribution_delta": 17574, "method": "scenario step 39 (15% off, 80% acquisition retention)" },
+  "evidence_steps": [10, 15, 35, 36, 37, 38, 39, 40, 41],
+  "risks": [
+    "Retention at 15% is untested; breakeven is about 65% (step 40). Below that, the change loses money.",
+    "No CAC/marketing spend in the mirror, so payback per channel can't be checked.",
+    "10% of WELCOME30 customers become full-price buyers; a weaker offer may lose some of them."
+  ],
+  "checks_performed": ["cohort 12-month value (tenure-matched)", "full-price conversion", "% repeat orders discounted", "kill / 15% / 20% / $100-minimum modelled", "retention sensitivity"],
+  "confidence": "low"
+}

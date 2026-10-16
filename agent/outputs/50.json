@@ -1,0 +1,103 @@
+{
+  "params": {
+    "allocation": "revenue",
+    "returnMultiplier": 1,
+    "freightPerOrder": null,
+    "threshold": 50
+  },
+  "actions": [
+    {
+      "id": "P-006",
+      "kind": "markdown",
+      "skus": [
+        "KNT-MOS-XS",
+        "KNT-MOS-S",
+        "KNT-MOS-M",
+        "KNT-MOS-L",
+        "KNT-MOS-XL"
+      ],
+      "markdown_pct": 0.3,
+      "target_weeks_cover": 16,
+      "sell_through": 0.6,
+      "cannibalization": 0.15
+    },
+    {
+      "id": "ALT-md-20",
+      "kind": "markdown",
+      "skus": [
+        "KNT-MOS-XS",
+        "KNT-MOS-S",
+        "KNT-MOS-M",
+        "KNT-MOS-L",
+        "KNT-MOS-XL"
+      ],
+      "markdown_pct": 0.2,
+      "target_weeks_cover": 16,
+      "sell_through": 0.4,
+      "cannibalization": 0.15
+    }
+  ],
+  "result": {
+    "baseline_cm": 1068855,
+    "scenario_cm": 1118094,
+    "combined_delta": 49238,
+    "sum_of_individual": 49238,
+    "interaction": 0,
+    "actions": [
+      {
+        "id": "P-006",
+        "kind": "markdown",
+        "annual_contribution_delta": 23969,
+        "detail": {
+          "excess_units": 2214,
+          "units_cleared": 1328,
+          "cash_released": 100452
+        },
+        "assumptions": [
+          {
+            "name": "Sell-through of excess at markdown",
+            "value": "60%",
+            "confidence": "medium"
+          },
+          {
+            "name": "Cannibalisation of full-price units",
+            "value": "15%",
+            "confidence": "medium"
+          },
+          {
+            "name": "Carrying cost avoided",
+            "value": "22%/yr × 6 months",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "id": "ALT-md-20",
+        "kind": "markdown",
+        "annual_contribution_delta": 25269,
+        "detail": {
+          "excess_units": 2214,
+          "units_cleared": 886,
+          "cash_released": 76535
+        },
+        "assumptions": [
+          {
+            "name": "Sell-through of excess at markdown",
+            "value": "40%",
+            "confidence": "medium"
+          },
+          {
+            "name": "Cannibalisation of full-price units",
+            "value": "15%",
+            "confidence": "medium"
+          },
+          {
+            "name": "Carrying cost avoided",
+            "value": "22%/yr × 6 months",
+            "confidence": "medium"
+          }
+        ]
+      }
+    ]
+  }
+}

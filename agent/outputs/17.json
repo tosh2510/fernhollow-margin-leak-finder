@@ -1,0 +1,91 @@
+{
+  "params": {
+    "allocation": "revenue",
+    "returnMultiplier": 1,
+    "freightPerOrder": null,
+    "threshold": 50
+  },
+  "style": "Wrap Dress",
+  "rows": [
+    {
+      "size": "XS",
+      "units": 370,
+      "returned": 81,
+      "return_rate": 0.219,
+      "cm": 18870.09,
+      "cm_pct": 0.468,
+      "reasons": {
+        "size_too_large": 0.284,
+        "changed_mind": 0.222,
+        "size_too_small": 0.21,
+        "not_as_pictured": 0.123,
+        "quality": 0.099,
+        "arrived_late": 0.062
+      }
+    },
+    {
+      "size": "S",
+      "units": 855,
+      "returned": 226,
+      "return_rate": 0.264,
+      "cm": 39417.99,
+      "cm_pct": 0.446,
+      "reasons": {
+        "changed_mind": 0.27,
+        "size_too_small": 0.252,
+        "size_too_large": 0.19,
+        "not_as_pictured": 0.124,
+        "quality": 0.093,
+        "arrived_late": 0.071
+      }
+    },
+    {
+      "size": "M",
+      "units": 1346,
+      "returned": 862,
+      "return_rate": 0.64,
+      "cm": -2565.79,
+      "cm_pct": -0.038,
+      "reasons": {
+        "size_too_small": 0.715,
+        "changed_mind": 0.114,
+        "not_as_pictured": 0.072,
+        "size_too_large": 0.043,
+        "quality": 0.038,
+        "arrived_late": 0.019
+      }
+    },
+    {
+      "size": "L",
+      "units": 1158,
+      "returned": 745,
+      "return_rate": 0.643,
+      "cm": -3515.84,
+      "cm_pct": -0.061,
+      "reasons": {
+        "size_too_small": 0.705,
+        "changed_mind": 0.099,
+        "not_as_pictured": 0.074,
+        "quality": 0.056,
+        "size_too_large": 0.04,
+        "arrived_late": 0.026
+      }
+    },
+    {
+      "size": "XL",
+      "units": 665,
+      "returned": 156,
+      "return_rate": 0.235,
+      "cm": 32646.68,
+      "cm_pct": 0.458,
+      "reasons": {
+        "changed_mind": 0.353,
+        "size_too_large": 0.192,
+        "size_too_small": 0.186,
+        "quality": 0.096,
+        "arrived_late": 0.09,
+        "not_as_pictured": 0.083
+      }
+    }
+  ]
+}

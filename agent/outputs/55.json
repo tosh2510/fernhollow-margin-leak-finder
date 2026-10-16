@@ -1,0 +1,91 @@
+{
+  "params": {
+    "allocation": "revenue",
+    "returnMultiplier": 1,
+    "freightPerOrder": null,
+    "threshold": 50
+  },
+  "style": "Slip Dress",
+  "rows": [
+    {
+      "size": "XS",
+      "units": 196,
+      "returned": 70,
+      "return_rate": 0.357,
+      "cm": 6718.53,
+      "cm_pct": 0.442,
+      "reasons": {
+        "changed_mind": 0.414,
+        "size_too_small": 0.186,
+        "size_too_large": 0.171,
+        "not_as_pictured": 0.129,
+        "quality": 0.071,
+        "arrived_late": 0.029
+      }
+    },
+    {
+      "size": "S",
+      "units": 452,
+      "returned": 169,
+      "return_rate": 0.374,
+      "cm": 14976.73,
+      "cm_pct": 0.434,
+      "reasons": {
+        "changed_mind": 0.302,
+        "size_too_large": 0.243,
+        "size_too_small": 0.213,
+        "quality": 0.095,
+        "arrived_late": 0.077,
+        "not_as_pictured": 0.071
+      }
+    },
+    {
+      "size": "M",
+      "units": 667,
+      "returned": 243,
+      "return_rate": 0.364,
+      "cm": 22465.19,
+      "cm_pct": 0.437,
+      "reasons": {
+        "changed_mind": 0.28,
+        "size_too_large": 0.218,
+        "size_too_small": 0.21,
+        "quality": 0.103,
+        "not_as_pictured": 0.099,
+        "arrived_late": 0.091
+      }
+    },
+    {
+      "size": "L",
+      "units": 606,
+      "returned": 207,
+      "return_rate": 0.342,
+      "cm": 21833.5,
+      "cm_pct": 0.452,
+      "reasons": {
+        "changed_mind": 0.333,
+        "size_too_small": 0.232,
+        "size_too_large": 0.179,
+        "not_as_pictured": 0.092,
+        "quality": 0.092,
+        "arrived_late": 0.072
+      }
+    },
+    {
+      "size": "XL",
+      "units": 329,
+      "returned": 112,
+      "return_rate": 0.34,
+      "cm": 12057.55,
+      "cm_pct": 0.458,
+      "reasons": {
+        "changed_mind": 0.339,
+        "size_too_large": 0.25,
+        "size_too_small": 0.17,
+        "quality": 0.134,
+        "not_as_pictured": 0.071,
+        "arrived_late": 0.036
+      }
+    }
+  ]
+}

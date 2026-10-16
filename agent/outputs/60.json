@@ -1,0 +1,26 @@
+{
+  "table": "shopify_products",
+  "system": "Shopify",
+  "rows": 80,
+  "description": "Catalog variants.",
+  "fields": {
+    "sku": "string STYLE-COL-SIZE",
+    "style": "string",
+    "category": "string",
+    "size": "XS..XL",
+    "color": "string",
+    "list_price": "USD",
+    "status": "active|archived"
+  },
+  "matched": [
+    {
+      "sku": "KNT-MOS-M",
+      "style": "Merino Crew",
+      "category": "Knitwear",
+      "size": "M",
+      "color": "Moss",
+      "list_price": 138,
+      "status": "active"
+    }
+  ]
+}

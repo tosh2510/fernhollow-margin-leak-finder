@@ -1,0 +1,62 @@
+{
+  "target": "TEE",
+  "units": 10872,
+  "orders_containing": 7913,
+  "share_of_units_in_orders_with_only_this_item": 0.5965783664459161,
+  "only_this_item_orders": 3527,
+  "only_this_item_orders_avg_cm": -4.581951913807762,
+  "multi_item_orders": 11755,
+  "attach_rate_multi_item": 0.580093577201191,
+  "mixed_multi_item_orders": 9322,
+  "attach_rate_mixed_baskets": 0.47049989272688264,
+  "mixed_with": {
+    "orders": 4386,
+    "avg_order_cm": 73.85433130414948,
+    "avg_subtotal": 240.1505015959874
+  },
+  "mixed_without": {
+    "orders": 4936,
+    "avg_order_cm": 84.30304643435979,
+    "avg_subtotal": 246.6234197730948
+  },
+  "multi_with": {
+    "orders": 6819,
+    "avg_order_cm": 45.0435107787065,
+    "avg_subtotal": 173.75481742190905,
+    "avg_units": 2.738378061299311
+  },
+  "multi_without": {
+    "orders": 4936,
+    "avg_order_cm": 84.30304643435979,
+    "avg_subtotal": 246.6234197730948,
+    "avg_units": 2.3379254457050243
+  },
+  "allocated_cm": {
+    "revenue": -5284.594759223769,
+    "units": -20501.61399999994
+  },
+  "incremental_cm_if_removed": -5148.9147402248345,
+  "incremental_cm_per_unit": -0.4735940710287743,
+  "top_co_purchased_styles": [
+    {
+      "style": "Chino",
+      "orders": 1872
+    },
+    {
+      "style": "Merino Crew",
+      "orders": 1456
+    },
+    {
+      "style": "Knit Polo",
+      "orders": 1430
+    },
+    {
+      "style": "Wrap Dress",
+      "orders": 1170
+    },
+    {
+      "style": "Linen Shirt",
+      "orders": 1116
+    }
+  ]
+}

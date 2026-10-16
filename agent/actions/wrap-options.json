@@ -1,0 +1,5 @@
+{ "actions": [
+  { "id": "P-001", "kind": "fix_fit", "skus": ["WRP-BLA-M","WRP-BLA-L","WRP-TER-M","WRP-TER-L"], "pause_months": 4, "target_return_rate": 0.32 },
+  { "id": "ALT-wrap-discontinue", "kind": "pause_skus", "skus": ["WRP"], "months": 12, "halo": 0 },
+  { "id": "ALT-wrap-pause-only", "kind": "pause_skus", "skus": ["WRP-BLA-M","WRP-BLA-L","WRP-TER-M","WRP-TER-L"], "months": 12, "halo": 0 }
+]}

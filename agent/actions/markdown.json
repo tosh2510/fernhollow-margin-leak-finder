@@ -1,0 +1,4 @@
+{ "actions": [
+  { "id": "P-006", "kind": "markdown", "skus": ["KNT-MOS-XS","KNT-MOS-S","KNT-MOS-M","KNT-MOS-L","KNT-MOS-XL"], "markdown_pct": 0.3, "target_weeks_cover": 16, "sell_through": 0.6, "cannibalization": 0.15 },
+  { "id": "ALT-md-20", "kind": "markdown", "skus": ["KNT-MOS-XS","KNT-MOS-S","KNT-MOS-M","KNT-MOS-L","KNT-MOS-XL"], "markdown_pct": 0.2, "target_weeks_cover": 16, "sell_through": 0.4, "cannibalization": 0.15 }
+]}

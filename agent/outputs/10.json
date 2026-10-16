@@ -1,0 +1,47 @@
+{
+  "params": {
+    "allocation": "revenue",
+    "returnMultiplier": 1,
+    "freightPerOrder": null,
+    "threshold": 50
+  },
+  "by": "cohort",
+  "rows": [
+    {
+      "key": "promo-acquired",
+      "cm": 44411.16,
+      "cm_pct": 0.3602,
+      "net_revenue": 123281.8,
+      "units": 2136,
+      "return_rate": 0.222,
+      "orders": 1212
+    },
+    {
+      "key": "WELCOME30",
+      "cm": 80887.03,
+      "cm_pct": 0.2671,
+      "net_revenue": 302880.7,
+      "units": 6091,
+      "return_rate": 0.221,
+      "orders": 3443
+    },
+    {
+      "key": "full-price acquired",
+      "cm": 406684.4,
+      "cm_pct": 0.4265,
+      "net_revenue": 953561.6,
+      "units": 14769,
+      "return_rate": 0.231,
+      "orders": 8489
+    },
+    {
+      "key": "pre-window customers",
+      "cm": 536872.89,
+      "cm_pct": 0.4191,
+      "net_revenue": 1280884,
+      "units": 20006,
+      "return_rate": 0.23,
+      "orders": 11400
+    }
+  ]
+}

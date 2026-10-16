@@ -1,0 +1,64 @@
+{
+  "table": "quickbooks_cogs",
+  "system": "QuickBooks",
+  "rows": 80,
+  "description": "Standard landed cost per SKU.",
+  "fields": {
+    "sku": "string",
+    "fob_cost": "USD",
+    "inbound_freight_per_unit": "USD",
+    "duty_rate": "fraction of FOB",
+    "landed_cost": "USD = fob×(1+duty)+freight"
+  },
+  "matched": [
+    {
+      "sku": "POL-NAV-M",
+      "fob_cost": 18.6,
+      "inbound_freight_per_unit": 0.7,
+      "duty_rate": 0.197,
+      "landed_cost": 22.96
+    },
+    {
+      "sku": "POL-NAV-L",
+      "fob_cost": 18.6,
+      "inbound_freight_per_unit": 0.7,
+      "duty_rate": 0.197,
+      "landed_cost": 22.96
+    },
+    {
+      "sku": "CHN-KHA-M",
+      "fob_cost": 23.4,
+      "inbound_freight_per_unit": 0.95,
+      "duty_rate": 0.166,
+      "landed_cost": 28.23
+    },
+    {
+      "sku": "CHN-KHA-L",
+      "fob_cost": 23.4,
+      "inbound_freight_per_unit": 0.95,
+      "duty_rate": 0.166,
+      "landed_cost": 28.23
+    },
+    {
+      "sku": "CHN-NAV-M",
+      "fob_cost": 23.4,
+      "inbound_freight_per_unit": 0.95,
+      "duty_rate": 0.166,
+      "landed_cost": 28.23
+    },
+    {
+      "sku": "CHN-NAV-L",
+      "fob_cost": 23.4,
+      "inbound_freight_per_unit": 0.95,
+      "duty_rate": 0.166,
+      "landed_cost": 28.23
+    },
+    {
+      "sku": "KNT-MOS-M",
+      "fob_cost": 35,
+      "inbound_freight_per_unit": 1.2,
+      "duty_rate": 0.24,
+      "landed_cost": 44.6
+    }
+  ]
+}

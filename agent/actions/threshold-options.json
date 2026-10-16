@@ -1,0 +1,7 @@
+{ "actions": [
+  { "id": "ALT-thr-60", "kind": "shipping_threshold", "threshold": 60 },
+  { "id": "ALT-thr-65", "kind": "shipping_threshold", "threshold": 65 },
+  { "id": "P-002", "kind": "shipping_threshold", "threshold": 75 },
+  { "id": "ALT-thr-85", "kind": "shipping_threshold", "threshold": 85 },
+  { "id": "ALT-thr-100", "kind": "shipping_threshold", "threshold": 100 }
+]}

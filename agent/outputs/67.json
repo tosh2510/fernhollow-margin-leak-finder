@@ -1,0 +1,202 @@
+{
+  "params": {
+    "allocation": "revenue",
+    "returnMultiplier": 1,
+    "freightPerOrder": null,
+    "threshold": 50
+  },
+  "actions": [
+    {
+      "id": "P-001",
+      "kind": "fix_fit",
+      "skus": [
+        "WRP-BLA-M",
+        "WRP-BLA-L",
+        "WRP-TER-M",
+        "WRP-TER-L"
+      ],
+      "pause_months": 4,
+      "target_return_rate": 0.32
+    },
+    {
+      "id": "P-002",
+      "kind": "shipping_threshold",
+      "threshold": 75
+    },
+    {
+      "id": "P-003",
+      "kind": "keep",
+      "skus": [
+        "TEE"
+      ],
+      "counterfactual_halo": 0.1
+    },
+    {
+      "id": "P-004",
+      "kind": "discount_rule",
+      "code": "WELCOME30",
+      "new_pct": 0.15,
+      "retention": 0.8
+    },
+    {
+      "id": "P-005",
+      "kind": "po",
+      "skus": [
+        "POL-NAV-M",
+        "POL-NAV-L",
+        "CHN-KHA-M",
+        "CHN-KHA-L",
+        "CHN-NAV-M",
+        "CHN-NAV-L"
+      ]
+    },
+    {
+      "id": "P-006",
+      "kind": "markdown",
+      "skus": [
+        "KNT-MOS-XS",
+        "KNT-MOS-S",
+        "KNT-MOS-M",
+        "KNT-MOS-L",
+        "KNT-MOS-XL"
+      ],
+      "markdown_pct": 0.3,
+      "target_weeks_cover": 16,
+      "sell_through": 0.6,
+      "cannibalization": 0.15
+    }
+  ],
+  "result": {
+    "baseline_cm": 1068855,
+    "scenario_cm": 1204566,
+    "combined_delta": 135710,
+    "sum_of_individual": 139571,
+    "interaction": -3861,
+    "actions": [
+      {
+        "id": "P-001",
+        "kind": "fix_fit",
+        "annual_contribution_delta": 67329,
+        "detail": {},
+        "assumptions": [
+          {
+            "name": "Months paused before revised fit lands",
+            "value": "4",
+            "confidence": "medium"
+          },
+          {
+            "name": "Post-fix return rate",
+            "value": "32% (other sizes run ~26–31%)",
+            "confidence": "medium"
+          },
+          {
+            "name": "Paused-size demand lost, not substituted",
+            "value": "yes (conservative)",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "id": "P-002",
+        "kind": "shipping_threshold",
+        "annual_contribution_delta": 18021,
+        "detail": {},
+        "assumptions": [
+          {
+            "name": "Abandon rate among newly-charged orders",
+            "value": "12%",
+            "confidence": "low"
+          },
+          {
+            "name": "Trade-up to clear threshold",
+            "value": "not counted",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "id": "P-003",
+        "kind": "keep",
+        "annual_contribution_delta": 0,
+        "detail": {
+          "counterfactual_cut_delta": -26142,
+          "counterfactual_cut_delta_no_halo": 5149,
+          "breakeven_halo": 0.0165
+        },
+        "assumptions": [
+          {
+            "name": "Counterfactual basket halo if cut",
+            "value": "10%",
+            "confidence": "low"
+          }
+        ]
+      },
+      {
+        "id": "P-004",
+        "kind": "discount_rule",
+        "annual_contribution_delta": 17574,
+        "detail": {},
+        "assumptions": [
+          {
+            "name": "Acquisition retained at new offer",
+            "value": "80%",
+            "confidence": "low"
+          },
+          {
+            "name": "Lost customers lose their whole 12-month value",
+            "value": "yes",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "id": "P-005",
+        "kind": "po",
+        "annual_contribution_delta": 12678,
+        "detail": {
+          "recovered_units_per_year": 405,
+          "method": "trailing-12m stockout lost units × incremental unit CM"
+        },
+        "assumptions": [
+          {
+            "name": "Past 12m stockout pattern recurs without a reorder policy",
+            "value": "yes",
+            "confidence": "medium"
+          },
+          {
+            "name": "Substitution during stockout",
+            "value": "25%",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "id": "P-006",
+        "kind": "markdown",
+        "annual_contribution_delta": 23969,
+        "detail": {
+          "excess_units": 2214,
+          "units_cleared": 1328,
+          "cash_released": 100452
+        },
+        "assumptions": [
+          {
+            "name": "Sell-through of excess at markdown",
+            "value": "60%",
+            "confidence": "medium"
+          },
+          {
+            "name": "Cannibalisation of full-price units",
+            "value": "15%",
+            "confidence": "medium"
+          },
+          {
+            "name": "Carrying cost avoided",
+            "value": "22%/yr × 6 months",
+            "confidence": "medium"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "id": "P-005",
+  "title": "Draft POs for 6 stocked-out core M/L SKUs (polo + chino)",
+  "type": "create_po",
+  "target_system": "supplier_email",
+  "payload": {
+    "purchase_orders": [
+      {
+        "supplier_id": "SUP-02",
+        "supplier": "Kaveri Knit Mills (India)",
+        "lead_time_days": 52,
+        "moq_per_style_colour": 300,
+        "eta_if_issued_2026-09-30": "2026-11-21",
+        "lines": [
+          {
+            "sku": "POL-NAV-M",
+            "qty": 475,
+            "unit_fob": 18.6,
+            "needed_by": "2026-10-10"
+          },
+          {
+            "sku": "POL-NAV-L",
+            "qty": 395,
+            "unit_fob": 18.6,
+            "needed_by": "2026-10-08"
+          }
+        ]
+      },
+      {
+        "supplier_id": "SUP-03",
+        "supplier": "Song Lam Garment Co. (Vietnam)",
+        "lead_time_days": 58,
+        "moq_per_style_colour": 400,
+        "eta_if_issued_2026-09-30": "2026-11-27",
+        "lines": [
+          {
+            "sku": "CHN-KHA-M",
+            "qty": 343,
+            "unit_fob": 23.4,
+            "needed_by": "2026-10-07"
+          },
+          {
+            "sku": "CHN-KHA-L",
+            "qty": 338,
+            "unit_fob": 23.4,
+            "needed_by": "2026-10-10"
+          },
+          {
+            "sku": "CHN-NAV-M",
+            "qty": 296,
+            "unit_fob": 23.4,
+            "needed_by": "2026-10-09"
+          },
+          {
+            "sku": "CHN-NAV-L",
+            "qty": 232,
+            "unit_fob": 23.4,
+            "needed_by": "2026-10-11"
+          }
+        ]
+      }
+    ],
+    "method": "order-up-to = reorder point (velocity × lead time + 1.65σ√LT) + 10 weeks; MOQ checked per style-colour",
+    "open_question_for_operator": "Sea ETA misses projected stockout by 42-51 days and overlaps BFCM. Air-freight a partial (cost not in mirror)?"
+  },
+  "impact": {
+    "annual_contribution_delta": 12678,
+    "method": "scenario step 45 (trailing-12m lost units × incremental unit CM)"
+  },
+  "evidence_steps": [
+    42,
+    43,
+    44,
+    45,
+    57,
+    59
+  ],
+  "risks": [
+    "A 42-51 day gap is unavoidable by sea; this PO prevents the next stockout, not the current one.",
+    "Impact assumes last year's stockout pattern would repeat; it's a policy fix, not a one-off.",
+    "Kaveri on-time rate is 86%; a late PO extends the gap."
+  ],
+  "checks_performed": [
+    "weeks of cover vs lead time",
+    "safety stock and reorder point",
+    "MOQ per style-colour",
+    "projected stockout vs ETA",
+    "lost revenue from 12m stockout days"
+  ],
+  "confidence": "high",
+  "scenario_action": {
+    "id": "P-005",
+    "kind": "po",
+    "skus": [
+      "POL-NAV-M",
+      "POL-NAV-L",
+      "CHN-KHA-M",
+      "CHN-KHA-L",
+      "CHN-NAV-M",
+      "CHN-NAV-L"
+    ]
+  },
+  "status": "pending",
+  "proposed_at": "2026-10-16T20:10:46.767Z"
+}

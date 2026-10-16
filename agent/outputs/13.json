@@ -1,0 +1,74 @@
+{
+  "params": {
+    "allocation": "revenue",
+    "returnMultiplier": 1,
+    "freightPerOrder": null,
+    "threshold": 50
+  },
+  "by": "code",
+  "rows": [
+    {
+      "key": "TEE2FOR50",
+      "cm": -12270.45,
+      "cm_pct": -0.124,
+      "net_revenue": 98974,
+      "units": 4282,
+      "return_rate": 0.086,
+      "orders": 1929
+    },
+    {
+      "key": "EMAIL15",
+      "cm": 13767.27,
+      "cm_pct": 0.3622,
+      "net_revenue": 38012,
+      "units": 672,
+      "return_rate": 0.211,
+      "orders": 367
+    },
+    {
+      "key": "BFCM25",
+      "cm": 16273.01,
+      "cm_pct": 0.2829,
+      "net_revenue": 57520.5,
+      "units": 1091,
+      "return_rate": 0.227,
+      "orders": 631
+    },
+    {
+      "key": "HOLIDAY20",
+      "cm": 19111.23,
+      "cm_pct": 0.3134,
+      "net_revenue": 60988.8,
+      "units": 1092,
+      "return_rate": 0.229,
+      "orders": 620
+    },
+    {
+      "key": "SUMMER20",
+      "cm": 25007.15,
+      "cm_pct": 0.3098,
+      "net_revenue": 80721.6,
+      "units": 1601,
+      "return_rate": 0.217,
+      "orders": 913
+    },
+    {
+      "key": "WELCOME30",
+      "cm": 45489.6,
+      "cm_pct": 0.222,
+      "net_revenue": 204873.2,
+      "units": 4350,
+      "return_rate": 0.218,
+      "orders": 2468
+    },
+    {
+      "key": "(none)",
+      "cm": 961477.67,
+      "cm_pct": 0.4536,
+      "net_revenue": 2119518,
+      "units": 29914,
+      "return_rate": 0.252,
+      "orders": 17616
+    }
+  ]
+}

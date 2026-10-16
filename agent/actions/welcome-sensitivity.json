@@ -1,0 +1,4 @@
+{ "actions": [
+  { "id": "SENS-15-r70", "kind": "discount_rule", "code": "WELCOME30", "new_pct": 0.15, "retention": 0.7 },
+  { "id": "SENS-15-r60", "kind": "discount_rule", "code": "WELCOME30", "new_pct": 0.15, "retention": 0.6 }
+]}

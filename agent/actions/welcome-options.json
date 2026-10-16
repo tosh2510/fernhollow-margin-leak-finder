@@ -1,0 +1,6 @@
+{ "actions": [
+  { "id": "ALT-welcome-kill", "kind": "discount_rule", "code": "WELCOME30", "new_pct": 0, "retention": 0.5 },
+  { "id": "P-004", "kind": "discount_rule", "code": "WELCOME30", "new_pct": 0.15, "retention": 0.8 },
+  { "id": "ALT-welcome-30-min100", "kind": "discount_rule", "code": "WELCOME30", "new_pct": 0.3, "min_subtotal": 100, "retention": 1.0, "below_min_retention": 0.55 },
+  { "id": "ALT-welcome-20", "kind": "discount_rule", "code": "WELCOME30", "new_pct": 0.2, "retention": 0.9 }
+]}

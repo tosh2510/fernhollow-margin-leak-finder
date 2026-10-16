@@ -1,0 +1,115 @@
+{
+  "params": {
+    "allocation": "revenue",
+    "returnMultiplier": 1,
+    "freightPerOrder": null,
+    "threshold": 50
+  },
+  "actions": [
+    {
+      "id": "SENS-75-a25",
+      "kind": "shipping_threshold",
+      "threshold": 75,
+      "abandon": 0.25
+    },
+    {
+      "id": "SENS-75-a40",
+      "kind": "shipping_threshold",
+      "threshold": 75,
+      "abandon": 0.4
+    },
+    {
+      "id": "SENS-100-a25",
+      "kind": "shipping_threshold",
+      "threshold": 100,
+      "abandon": 0.25
+    },
+    {
+      "id": "SENS-100-a40",
+      "kind": "shipping_threshold",
+      "threshold": 100,
+      "abandon": 0.4
+    }
+  ],
+  "result": {
+    "baseline_cm": 1068855,
+    "scenario_cm": 1048591,
+    "combined_delta": -20265,
+    "sum_of_individual": 20412,
+    "interaction": -40677,
+    "actions": [
+      {
+        "id": "SENS-75-a25",
+        "kind": "shipping_threshold",
+        "annual_contribution_delta": 15424,
+        "detail": {},
+        "assumptions": [
+          {
+            "name": "Abandon rate among newly-charged orders",
+            "value": "25%",
+            "confidence": "low"
+          },
+          {
+            "name": "Trade-up to clear threshold",
+            "value": "not counted",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "id": "SENS-75-a40",
+        "kind": "shipping_threshold",
+        "annual_contribution_delta": 12427,
+        "detail": {},
+        "assumptions": [
+          {
+            "name": "Abandon rate among newly-charged orders",
+            "value": "40%",
+            "confidence": "low"
+          },
+          {
+            "name": "Trade-up to clear threshold",
+            "value": "not counted",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "id": "SENS-100-a25",
+        "kind": "shipping_threshold",
+        "annual_contribution_delta": 12826,
+        "detail": {},
+        "assumptions": [
+          {
+            "name": "Abandon rate among newly-charged orders",
+            "value": "25%",
+            "confidence": "low"
+          },
+          {
+            "name": "Trade-up to clear threshold",
+            "value": "not counted",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "id": "SENS-100-a40",
+        "kind": "shipping_threshold",
+        "annual_contribution_delta": -20265,
+        "detail": {},
+        "assumptions": [
+          {
+            "name": "Abandon rate among newly-charged orders",
+            "value": "40%",
+            "confidence": "low"
+          },
+          {
+            "name": "Trade-up to clear threshold",
+            "value": "not counted",
+            "confidence": "medium"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "table": "shopify_orders",
+    "system": "Shopify",
+    "rows": 24544,
+    "description": "Orders. subtotal is after discounts, before shipping/tax. One line per SKU."
+  },
+  {
+    "table": "shopify_refunds",
+    "system": "Shopify",
+    "rows": 9825,
+    "description": "Refunded units. amount = unit price net of allocated discount × qty. Shipping not refunded."
+  },
+  {
+    "table": "shopify_products",
+    "system": "Shopify",
+    "rows": 80,
+    "description": "Catalog variants."
+  },
+  {
+    "table": "shopify_customers",
+    "system": "Shopify",
+    "rows": 13756,
+    "description": "Customers with an order in the window. created_at before 2025-10-01 = pre-window customer."
+  },
+  {
+    "table": "quickbooks_cogs",
+    "system": "QuickBooks",
+    "rows": 80,
+    "description": "Standard landed cost per SKU."
+  },
+  {
+    "table": "quickbooks_opex",
+    "system": "QuickBooks",
+    "rows": 62,
+    "description": "Monthly payment-fee and 3PL invoice lines."
+  },
+  {
+    "table": "threepl_shipments",
+    "system": "3PL",
+    "rows": 24544,
+    "description": "Outbound shipment costs billed by the 3PL."
+  },
+  {
+    "table": "threepl_returns",
+    "system": "3PL",
+    "rows": 9825,
+    "description": "Return handling. One prepaid label per return package (first row carries the label)."
+  },
+  {
+    "table": "inventory",
+    "system": "Inventory",
+    "rows": 80,
+    "description": "Snapshot as of 2026-09-30. velocity = trailing 13-week avg units/week. moq is per style-colour."
+  },
+  {
+    "table": "inventory_stockouts",
+    "system": "Inventory",
+    "rows": 9,
+    "description": "Out-of-stock intervals in the last 12 months."
+  },
+  {
+    "table": "suppliers",
+    "system": "Inventory",
+    "rows": 6,
+    "description": "Supplier master."
+  }
+]

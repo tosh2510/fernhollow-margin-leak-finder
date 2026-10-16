@@ -1,0 +1,26 @@
+{
+  "table": "threepl_returns",
+  "system": "3PL",
+  "rows": 9825,
+  "description": "Return handling. One prepaid label per return package (first row carries the label).",
+  "fields": {
+    "refund_id": "string",
+    "processing_cost": "USD",
+    "return_label_cost": "USD",
+    "restocked": "bool"
+  },
+  "sample": [
+    {
+      "refund_id": "R-500001",
+      "processing_cost": 7.25,
+      "return_label_cost": 8.57,
+      "restocked": true
+    },
+    {
+      "refund_id": "R-500002",
+      "processing_cost": 7.25,
+      "return_label_cost": 8.79,
+      "restocked": true
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "params": {
+    "allocation": "revenue",
+    "returnMultiplier": 1,
+    "freightPerOrder": null,
+    "threshold": 50
+  },
+  "actions": [
+    {
+      "id": "ALT-thr-60",
+      "kind": "shipping_threshold",
+      "threshold": 60
+    },
+    {
+      "id": "ALT-thr-65",
+      "kind": "shipping_threshold",
+      "threshold": 65
+    },
+    {
+      "id": "P-002",
+      "kind": "shipping_threshold",
+      "threshold": 75
+    },
+    {
+      "id": "ALT-thr-85",
+      "kind": "shipping_threshold",
+      "threshold": 85
+    },
+    {
+      "id": "ALT-thr-100",
+      "kind": "shipping_threshold",
+      "threshold": 100
+    }
+  ],
+  "result": {
+    "baseline_cm": 1068855,
+    "scenario_cm": 1110360,
+    "combined_delta": 41505,
+    "sum_of_individual": 116561,
+    "interaction": -75056,
+    "actions": [
+      {
+        "id": "ALT-thr-60",
+        "kind": "shipping_threshold",
+        "annual_contribution_delta": 13449,
+        "detail": {},
+        "assumptions": [
+          {
+            "name": "Abandon rate among newly-charged orders",
+            "value": "12%",
+            "confidence": "low"
+          },
+          {
+            "name": "Trade-up to clear threshold",
+            "value": "not counted",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "id": "ALT-thr-65",
+        "kind": "shipping_threshold",
+        "annual_contribution_delta": 15059,
+        "detail": {},
+        "assumptions": [
+          {
+            "name": "Abandon rate among newly-charged orders",
+            "value": "12%",
+            "confidence": "low"
+          },
+          {
+            "name": "Trade-up to clear threshold",
+            "value": "not counted",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "id": "P-002",
+        "kind": "shipping_threshold",
+        "annual_contribution_delta": 18021,
+        "detail": {},
+        "assumptions": [
+          {
+            "name": "Abandon rate among newly-charged orders",
+            "value": "12%",
+            "confidence": "low"
+          },
+          {
+            "name": "Trade-up to clear threshold",
+            "value": "not counted",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "id": "ALT-thr-85",
+        "kind": "shipping_threshold",
+        "annual_contribution_delta": 28527,
+        "detail": {},
+        "assumptions": [
+          {
+            "name": "Abandon rate among newly-charged orders",
+            "value": "12%",
+            "confidence": "low"
+          },
+          {
+            "name": "Trade-up to clear threshold",
+            "value": "not counted",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "id": "ALT-thr-100",
+        "kind": "shipping_threshold",
+        "annual_contribution_delta": 41505,
+        "detail": {},
+        "assumptions": [
+          {
+            "name": "Abandon rate among newly-charged orders",
+            "value": "12%",
+            "confidence": "low"
+          },
+          {
+            "name": "Trade-up to clear threshold",
+            "value": "not counted",
+            "confidence": "medium"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "actions": [
+    {
+      "id": "P-001",
+      "kind": "fix_fit",
+      "skus": [
+        "WRP-BLA-M",
+        "WRP-BLA-L",
+        "WRP-TER-M",
+        "WRP-TER-L"
+      ],
+      "pause_months": 4,
+      "target_return_rate": 0.32
+    },
+    {
+      "id": "P-002",
+      "kind": "shipping_threshold",
+      "threshold": 75
+    },
+    {
+      "id": "P-003",
+      "kind": "keep",
+      "skus": [
+        "TEE"
+      ],
+      "counterfactual_halo": 0.1
+    },
+    {
+      "id": "P-004",
+      "kind": "discount_rule",
+      "code": "WELCOME30",
+      "new_pct": 0.15,
+      "retention": 0.8
+    },
+    {
+      "id": "P-005",
+      "kind": "po",
+      "skus": [
+        "POL-NAV-M",
+        "POL-NAV-L",
+        "CHN-KHA-M",
+        "CHN-KHA-L",
+        "CHN-NAV-M",
+        "CHN-NAV-L"
+      ]
+    },
+    {
+      "id": "P-006",
+      "kind": "markdown",
+      "skus": [
+        "KNT-MOS-XS",
+        "KNT-MOS-S",
+        "KNT-MOS-M",
+        "KNT-MOS-L",
+        "KNT-MOS-XL"
+      ],
+      "markdown_pct": 0.3,
+      "target_weeks_cover": 16,
+      "sell_through": 0.6,
+      "cannibalization": 0.15
+    }
+  ]
+}

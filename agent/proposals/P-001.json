@@ -1,0 +1,23 @@
+{
+  "id": "P-001",
+  "title": "Pause Wrap Dress M/L and send fit-spec revision to Ege Jersey",
+  "type": "fix_fit_and_pause",
+  "target_system": "shopify",
+  "payload": {
+    "writes": [
+      { "system": "shopify", "op": "variant.update", "skus": ["WRP-BLA-M", "WRP-BLA-L", "WRP-TER-M", "WRP-TER-L"], "set": { "inventory_policy": "deny", "available_for_sale": false, "storefront_badge": "Back soon in a refined fit" } },
+      { "system": "supplier_email", "to": "SUP-05 Ege Jersey Tekstil (Turkey)", "subject": "Wrap Dress fit-spec revision: sizes M and L", "body": "71% of M/L returns cite size_too_small (64% return rate vs 22-26% in XS/S/XL). Please re-check the M and L grade rules for bust, waist and hip against the base sample, and send revised M/L fit samples before the next bulk cut. XS/S/XL unchanged.", "attachments": ["returns_breakdown step 17"] }
+    ],
+    "relaunch": { "after_months": 4, "condition": "revised M/L fit samples approved" }
+  },
+  "impact": { "annual_contribution_delta": 67329, "method": "scenario step 19 (fix_fit: 4-month pause, relaunch at 32% return rate)" },
+  "evidence_steps": [8, 14, 16, 17, 18, 19, 20],
+  "risks": [
+    "Post-fix return rate of 32% is an assumption; XS/S/XL run 22-26%. If the fix only reaches 45%, most of the gain disappears.",
+    "Pausing M/L is roughly CM-neutral on its own (-$1.5k/yr if permanent); it is justified by customer experience, not margin.",
+    "4-month pause assumes one sampling round; a second round extends it.",
+    "M/L demand during the pause is assumed lost (no substitution to other sizes)."
+  ],
+  "checks_performed": ["returns by size and reason", "XS/S/XL margin vs M/L", "discontinue-style counterfactual (-$98k)", "incremental vs allocated CM of paused sizes"],
+  "confidence": "medium"
+}

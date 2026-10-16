@@ -1,0 +1,111 @@
+{
+  "params": {
+    "allocation": "revenue",
+    "returnMultiplier": 1,
+    "freightPerOrder": null,
+    "threshold": 50
+  },
+  "actions": [
+    {
+      "id": "P-001",
+      "kind": "fix_fit",
+      "skus": [
+        "WRP-BLA-M",
+        "WRP-BLA-L",
+        "WRP-TER-M",
+        "WRP-TER-L"
+      ],
+      "pause_months": 4,
+      "target_return_rate": 0.32
+    },
+    {
+      "id": "ALT-wrap-discontinue",
+      "kind": "pause_skus",
+      "skus": [
+        "WRP"
+      ],
+      "months": 12,
+      "halo": 0
+    },
+    {
+      "id": "ALT-wrap-pause-only",
+      "kind": "pause_skus",
+      "skus": [
+        "WRP-BLA-M",
+        "WRP-BLA-L",
+        "WRP-TER-M",
+        "WRP-TER-L"
+      ],
+      "months": 12,
+      "halo": 0
+    }
+  ],
+  "result": {
+    "baseline_cm": 1068855,
+    "scenario_cm": 970512,
+    "combined_delta": -98344,
+    "sum_of_individual": -32490,
+    "interaction": -65854,
+    "actions": [
+      {
+        "id": "P-001",
+        "kind": "fix_fit",
+        "annual_contribution_delta": 67329,
+        "detail": {},
+        "assumptions": [
+          {
+            "name": "Months paused before revised fit lands",
+            "value": "4",
+            "confidence": "medium"
+          },
+          {
+            "name": "Post-fix return rate",
+            "value": "32% (other sizes run ~26–31%)",
+            "confidence": "medium"
+          },
+          {
+            "name": "Paused-size demand lost, not substituted",
+            "value": "yes (conservative)",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "id": "ALT-wrap-discontinue",
+        "kind": "pause_skus",
+        "annual_contribution_delta": -98344,
+        "detail": {},
+        "assumptions": [
+          {
+            "name": "Basket halo (orders lost with the SKU)",
+            "value": "0%",
+            "confidence": "low"
+          },
+          {
+            "name": "Order base costs persist when other items remain",
+            "value": "yes (incremental method)",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "id": "ALT-wrap-pause-only",
+        "kind": "pause_skus",
+        "annual_contribution_delta": -1475,
+        "detail": {},
+        "assumptions": [
+          {
+            "name": "Basket halo (orders lost with the SKU)",
+            "value": "0%",
+            "confidence": "low"
+          },
+          {
+            "name": "Order base costs persist when other items remain",
+            "value": "yes (incremental method)",
+            "confidence": "high"
+          }
+        ]
+      }
+    ]
+  }
+}

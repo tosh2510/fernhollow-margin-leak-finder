@@ -1,0 +1,310 @@
+{
+  "params": {
+    "allocation": "revenue",
+    "returnMultiplier": 1,
+    "freightPerOrder": null,
+    "threshold": 50
+  },
+  "rows": [
+    {
+      "band": "$10–20",
+      "orders": 110,
+      "avg_subtotal": 19.6,
+      "avg_units": 1,
+      "free_shipping_share": 0,
+      "cm": -531.67,
+      "cm_per_order": -4.83,
+      "cm_pct": -0.261
+    },
+    {
+      "band": "$20–30",
+      "orders": 984,
+      "avg_subtotal": 27.37,
+      "avg_units": 1,
+      "free_shipping_share": 0,
+      "cm": 1144.53,
+      "cm_per_order": 1.16,
+      "cm_pct": 0.047
+    },
+    {
+      "band": "$30–40",
+      "orders": 190,
+      "avg_subtotal": 39.2,
+      "avg_units": 2,
+      "free_shipping_share": 0,
+      "cm": -1707.78,
+      "cm_per_order": -8.99,
+      "cm_pct": -0.25
+    },
+    {
+      "band": "$40–50",
+      "orders": 212,
+      "avg_subtotal": 44.32,
+      "avg_units": 2,
+      "free_shipping_share": 0,
+      "cm": -972,
+      "cm_per_order": -4.58,
+      "cm_pct": -0.113
+    },
+    {
+      "band": "$50–60",
+      "orders": 1805,
+      "avg_subtotal": 50.99,
+      "avg_units": 1.9,
+      "free_shipping_share": 1,
+      "cm": -9893.98,
+      "cm_per_order": -5.48,
+      "cm_pct": -0.12
+    },
+    {
+      "band": "$60–70",
+      "orders": 604,
+      "avg_subtotal": 65.15,
+      "avg_units": 1.11,
+      "free_shipping_share": 1,
+      "cm": 6105.82,
+      "cm_per_order": 10.11,
+      "cm_pct": 0.202
+    },
+    {
+      "band": "$70–80",
+      "orders": 2443,
+      "avg_subtotal": 77.44,
+      "avg_units": 1.36,
+      "free_shipping_share": 1,
+      "cm": 48062.45,
+      "cm_per_order": 19.67,
+      "cm_pct": 0.311
+    },
+    {
+      "band": "$80–90",
+      "orders": 1594,
+      "avg_subtotal": 87.48,
+      "avg_units": 1.04,
+      "free_shipping_share": 1,
+      "cm": 42820.79,
+      "cm_per_order": 26.86,
+      "cm_pct": 0.4
+    },
+    {
+      "band": "$90–100",
+      "orders": 2360,
+      "avg_subtotal": 97.73,
+      "avg_units": 1.01,
+      "free_shipping_share": 1,
+      "cm": 65532.46,
+      "cm_per_order": 27.77,
+      "cm_pct": 0.401
+    },
+    {
+      "band": "$100–110",
+      "orders": 591,
+      "avg_subtotal": 104.35,
+      "avg_units": 1.41,
+      "free_shipping_share": 1,
+      "cm": 10038.47,
+      "cm_per_order": 16.99,
+      "cm_pct": 0.232
+    },
+    {
+      "band": "$110–120",
+      "orders": 1390,
+      "avg_subtotal": 116.96,
+      "avg_units": 1.13,
+      "free_shipping_share": 1,
+      "cm": 55771.49,
+      "cm_per_order": 40.12,
+      "cm_pct": 0.445
+    },
+    {
+      "band": "$120–130",
+      "orders": 1029,
+      "avg_subtotal": 127.17,
+      "avg_units": 1.32,
+      "free_shipping_share": 1,
+      "cm": 34603.73,
+      "cm_per_order": 33.63,
+      "cm_pct": 0.393
+    },
+    {
+      "band": "$130–140",
+      "orders": 1658,
+      "avg_subtotal": 137.78,
+      "avg_units": 1.06,
+      "free_shipping_share": 1,
+      "cm": 84144.5,
+      "cm_per_order": 50.75,
+      "cm_pct": 0.474
+    },
+    {
+      "band": "$140–150",
+      "orders": 1442,
+      "avg_subtotal": 147.54,
+      "avg_units": 1.19,
+      "free_shipping_share": 1,
+      "cm": 29227.78,
+      "cm_per_order": 20.27,
+      "cm_pct": 0.25
+    },
+    {
+      "band": "$150–160",
+      "orders": 290,
+      "avg_subtotal": 155.41,
+      "avg_units": 2.08,
+      "free_shipping_share": 1,
+      "cm": 12605.68,
+      "cm_per_order": 43.47,
+      "cm_pct": 0.38
+    },
+    {
+      "band": "$160–170",
+      "orders": 460,
+      "avg_subtotal": 165.65,
+      "avg_units": 2.07,
+      "free_shipping_share": 1,
+      "cm": 25525.2,
+      "cm_per_order": 55.49,
+      "cm_pct": 0.431
+    },
+    {
+      "band": "$170–180",
+      "orders": 602,
+      "avg_subtotal": 175.63,
+      "avg_units": 2.11,
+      "free_shipping_share": 1,
+      "cm": 30634.79,
+      "cm_per_order": 50.89,
+      "cm_pct": 0.403
+    },
+    {
+      "band": "$180–190",
+      "orders": 328,
+      "avg_subtotal": 185.28,
+      "avg_units": 2.27,
+      "free_shipping_share": 1,
+      "cm": 19821.09,
+      "cm_per_order": 60.43,
+      "cm_pct": 0.432
+    },
+    {
+      "band": "$190–200",
+      "orders": 419,
+      "avg_subtotal": 195.43,
+      "avg_units": 2.34,
+      "free_shipping_share": 1,
+      "cm": 28442.86,
+      "cm_per_order": 67.88,
+      "cm_pct": 0.456
+    },
+    {
+      "band": "$200–210",
+      "orders": 387,
+      "avg_subtotal": 204.84,
+      "avg_units": 2.48,
+      "free_shipping_share": 1,
+      "cm": 25843.35,
+      "cm_per_order": 66.78,
+      "cm_pct": 0.441
+    },
+    {
+      "band": "$210–220",
+      "orders": 530,
+      "avg_subtotal": 215.43,
+      "avg_units": 2.35,
+      "free_shipping_share": 1,
+      "cm": 42122.31,
+      "cm_per_order": 79.48,
+      "cm_pct": 0.477
+    },
+    {
+      "band": "$220–230",
+      "orders": 509,
+      "avg_subtotal": 225.2,
+      "avg_units": 2.38,
+      "free_shipping_share": 1,
+      "cm": 38208.1,
+      "cm_per_order": 75.07,
+      "cm_pct": 0.46
+    },
+    {
+      "band": "$230–240",
+      "orders": 461,
+      "avg_subtotal": 235.62,
+      "avg_units": 2.29,
+      "free_shipping_share": 1,
+      "cm": 35763.26,
+      "cm_per_order": 77.58,
+      "cm_pct": 0.465
+    },
+    {
+      "band": "$240–250",
+      "orders": 415,
+      "avg_subtotal": 244.91,
+      "avg_units": 2.56,
+      "free_shipping_share": 1,
+      "cm": 31257.07,
+      "cm_per_order": 75.32,
+      "cm_pct": 0.438
+    },
+    {
+      "band": "$250–260",
+      "orders": 369,
+      "avg_subtotal": 254.96,
+      "avg_units": 2.69,
+      "free_shipping_share": 1,
+      "cm": 31009.91,
+      "cm_per_order": 84.04,
+      "cm_pct": 0.457
+    },
+    {
+      "band": "$260–270",
+      "orders": 421,
+      "avg_subtotal": 264.78,
+      "avg_units": 2.71,
+      "free_shipping_share": 1,
+      "cm": 34209.73,
+      "cm_per_order": 81.26,
+      "cm_pct": 0.44
+    },
+    {
+      "band": "$270–280",
+      "orders": 327,
+      "avg_subtotal": 275,
+      "avg_units": 2.55,
+      "free_shipping_share": 1,
+      "cm": 29656.93,
+      "cm_per_order": 90.69,
+      "cm_pct": 0.465
+    },
+    {
+      "band": "$280–290",
+      "orders": 305,
+      "avg_subtotal": 284.63,
+      "avg_units": 2.8,
+      "free_shipping_share": 1,
+      "cm": 28819.88,
+      "cm_per_order": 94.49,
+      "cm_pct": 0.463
+    },
+    {
+      "band": "$290–300",
+      "orders": 227,
+      "avg_subtotal": 294.32,
+      "avg_units": 2.94,
+      "free_shipping_share": 1,
+      "cm": 19428.79,
+      "cm_per_order": 85.59,
+      "cm_pct": 0.434
+    },
+    {
+      "band": "$300+",
+      "orders": 2082,
+      "avg_subtotal": 379.45,
+      "avg_units": 3.75,
+      "free_shipping_share": 1,
+      "cm": 271159.93,
+      "cm_per_order": 130.24,
+      "cm_pct": 0.485
+    }
+  ]
+}
