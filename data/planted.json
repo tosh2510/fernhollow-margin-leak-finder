@@ -1,0 +1,59 @@
+{
+  "note": "Ground truth for the planted leaks. The agent did not read this file during its run.",
+  "leaks": [
+    {
+      "id": 1,
+      "name": "Fit-problem wrap dress",
+      "detail": "Wrap dress unit return probability 63% in M/L (reason mix 70% size_too_small) vs 25% in other sizes; wrap restock 58%.",
+      "expected_action": "Pause M/L, send fit-spec revision to the factory; do not discontinue the style."
+    },
+    {
+      "id": 2,
+      "name": "Free-shipping threshold too low",
+      "detail": "Threshold $50 vs ~$149 AOV. $50–65 orders (TEE2FOR50 pairs at exactly $50, discounted single items) ship free and are CM-negative.",
+      "expected_action": "Raise the threshold (model several) with conversion trade-off stated."
+    },
+    {
+      "id": 3,
+      "name": "WELCOME30 cohort",
+      "detail": "2484 customers (~18%) acquired with 30% off. 22% are 'converter' personas who buy at full price if they return (repeat probability 0.5); the rest return only inside promo windows.",
+      "expected_action": "Raise the bar (15% or min basket), do not kill the code."
+    },
+    {
+      "id": 4,
+      "name": "Stockouts on core M/L",
+      "detail": "Six chino/polo M/L SKUs with historical stockouts and <2 weeks cover vs 42–60 day lead times.",
+      "skus": [
+        "CHN-KHA-M",
+        "CHN-KHA-L",
+        "CHN-NAV-M",
+        "CHN-NAV-L",
+        "POL-NAV-M",
+        "POL-NAV-L"
+      ],
+      "lost_demand_line_choices_true": {
+        "CHN-KHA-M": 141,
+        "CHN-KHA-L": 98,
+        "CHN-NAV-M": 67,
+        "CHN-NAV-L": 69,
+        "POL-NAV-M": 72,
+        "POL-NAV-L": 58
+      },
+      "substitution_rate": 0.25,
+      "note_lost": "line choices hitting a stockout; ~25% of these were substituted to another colour, the rest were lost",
+      "expected_action": "Draft POs respecting lead time, safety stock and MOQ."
+    },
+    {
+      "id": 5,
+      "name": "Decoy: loss-leader tee",
+      "detail": "Core tee priced at ~32% GM with an evergreen 2-for-$50 multi-buy: slightly negative on allocated CM, but added to fuller baskets (attach probability rises with basket size) that carry well-above-average CM. Tee-only pairs at $50 ship free and are where the loss sits.",
+      "expected_action": "Keep, with rationale."
+    },
+    {
+      "id": 6,
+      "name": "Slow knitwear colourway",
+      "detail": "Merino Crew in Moss: >30 weeks of cover even at peak-season velocity.",
+      "expected_action": "Markdown or bundle; do not reorder."
+    }
+  ]
+}
